@@ -7,7 +7,7 @@ import scala.io.Source
   */
 class CruzCycles {
   def getFile() = {
-    val filename = "thesaurus.txt"
+    val filename = "Thesaurus.txt"
 //    Source.fromFile(filename).getLines.map(line => {
 //
 //    })
@@ -23,11 +23,32 @@ class CruzCycles {
 //        println(l.split(','))
 //        k -> Set(k)}.toMap
 //    invMap
-      val m = Source.fromFile(filename).getLines.map {
-        line =>
-          println(line)
-          line -> line
-      }.toMap
-      m
+
+//    def reduceList(list: List[List[String]]): List[List[String]] = list match {
+//      case x :: xs => {
+//        if (xs.isEmpty) List(x)
+//        else if (x.head == xs.head.head) reduceList(xs)
+//        else {
+//          println(x)
+//          x :: reduceList(xs)
+//        }
+//      }
+//    }
+
+    def reduceList(list: List[List[String]]): List[List[String]] = {
+      def reduceAcc(list: List[List[String]], acc: List[List[String]]): List[List[String]] = {
+        if (list.tail.isEmpty) list.head :: acc
+        else reduceAcc(list.tail, acc ++ List(list.head))
+      }
+      reduceAcc(list, List())
+    }
+    val lines = Source.fromFile(filename).getLines.toList.map(el => el.split(',').toList)
+//    val lines = Source.fromFile(filename).getLines.toList
+//    map {
+//      line => line.split(',').toList
+//    }.toList.groupBy(el => el.head)
+//    val lines = Source.fromFile(filename).getLines.toList
+//    println(reduceList(lines))
+    println(reduceList(lines))
   }
 }

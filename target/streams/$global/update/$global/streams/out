@@ -1,4 +1,4 @@
-[info] Updating {file:/Users/louiscruz/Desktop/CruzCycles/}cruzcycles...
+[info] Updating {file:/Users/louisstephancruz/Desktop/CruzCycles/}cruzcycles...
 [debug] :: resolving dependencies :: default#cruzcycles_2.12;1.0
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
@@ -23,7 +23,7 @@
 [debug] sbt-chain: Checking cache for: dependency: org.scalactic#scalactic_2.12;3.0.1 {compile=[default(compile)]}
 [info] Resolving org.scalactic#scalactic_2.12;3.0.1 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.scalactic#scalactic_2.12;3.0.1 {compile=[default(compile)]}
-[debug] 		tried /Users/louiscruz/.ivy2/local/org.scalactic/scalactic_2.12/3.0.1/ivys/ivy.xml
+[debug] 		tried /Users/louisstephancruz/.ivy2/local/org.scalactic/scalactic_2.12/3.0.1/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.scalactic#scalactic_2.12;3.0.1
 [debug] 		tried https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.1/scalactic_2.12-3.0.1.pom
 [debug] 	public: found md file for org.scalactic#scalactic_2.12;3.0.1
@@ -32,8 +32,8 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.1/scalactic_2.12-3.0.1.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.1/scalactic_2.12-3.0.1.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.1/scalactic_2.12-3.0.1.pom
-[debug] 	[SUCCESSFUL ] org.scalactic#scalactic_2.12;3.0.1!scalactic_2.12.pom(pom.original) (119ms)
-[debug] 		tried /Users/louiscruz/.ivy2/local/org.scalactic/scalactic_2.12/3.0.1/bundles/scalactic_2.12.jar
+[debug] 	[SUCCESSFUL ] org.scalactic#scalactic_2.12;3.0.1!scalactic_2.12.pom(pom.original) (88ms)
+[debug] 		tried /Users/louisstephancruz/.ivy2/local/org.scalactic/scalactic_2.12/3.0.1/bundles/scalactic_2.12.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.1/scalactic_2.12-3.0.1.jar
 [debug] 	found org.scalactic#scalactic_2.12;3.0.1 in public
 [debug] == resolving dependencies default#cruzcycles_2.12;1.0->org.scalactic#scalactic_2.12;3.0.1 [compile->runtime]
@@ -300,7 +300,7 @@
 [debug] sbt-chain: Checking cache for: dependency: org.scalatest#scalatest_2.12;3.0.1 {test=[default(compile)]}
 [info] Resolving org.scalatest#scalatest_2.12;3.0.1 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.scalatest#scalatest_2.12;3.0.1 {test=[default(compile)]}
-[debug] 		tried /Users/louiscruz/.ivy2/local/org.scalatest/scalatest_2.12/3.0.1/ivys/ivy.xml
+[debug] 		tried /Users/louisstephancruz/.ivy2/local/org.scalatest/scalatest_2.12/3.0.1/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.scalatest#scalatest_2.12;3.0.1
 [debug] 		tried https://repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.1/scalatest_2.12-3.0.1.pom
 [debug] 	public: found md file for org.scalatest#scalatest_2.12;3.0.1
@@ -309,8 +309,8 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.1/scalatest_2.12-3.0.1.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.1/scalatest_2.12-3.0.1.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.1/scalatest_2.12-3.0.1.pom
-[debug] 	[SUCCESSFUL ] org.scalatest#scalatest_2.12;3.0.1!scalatest_2.12.pom(pom.original) (110ms)
-[debug] 		tried /Users/louiscruz/.ivy2/local/org.scalatest/scalatest_2.12/3.0.1/bundles/scalatest_2.12.jar
+[debug] 	[SUCCESSFUL ] org.scalatest#scalatest_2.12;3.0.1!scalatest_2.12.pom(pom.original) (70ms)
+[debug] 		tried /Users/louisstephancruz/.ivy2/local/org.scalatest/scalatest_2.12/3.0.1/bundles/scalatest_2.12.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.1/scalatest_2.12-3.0.1.jar
 [debug] 	found org.scalatest#scalatest_2.12;3.0.1 in public
 [debug] == resolving dependencies default#cruzcycles_2.12;1.0->org.scalatest#scalatest_2.12;3.0.1 [test->runtime]
@@ -397,7 +397,7 @@
 [debug] sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.12;1.0.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [info] Resolving org.scala-lang.modules#scala-xml_2.12;1.0.5 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.12;1.0.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried /Users/louiscruz/.ivy2/local/org.scala-lang.modules/scala-xml_2.12/1.0.5/ivys/ivy.xml
+[debug] 		tried /Users/louisstephancruz/.ivy2/local/org.scala-lang.modules/scala-xml_2.12/1.0.5/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.scala-lang.modules#scala-xml_2.12;1.0.5
 [debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.5/scala-xml_2.12-1.0.5.pom
 [debug] 	public: found md file for org.scala-lang.modules#scala-xml_2.12;1.0.5
@@ -406,8 +406,8 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.5/scala-xml_2.12-1.0.5.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.5/scala-xml_2.12-1.0.5.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.5/scala-xml_2.12-1.0.5.pom
-[debug] 	[SUCCESSFUL ] org.scala-lang.modules#scala-xml_2.12;1.0.5!scala-xml_2.12.pom(pom.original) (104ms)
-[debug] 		tried /Users/louiscruz/.ivy2/local/org.scala-lang.modules/scala-xml_2.12/1.0.5/bundles/scala-xml_2.12.jar
+[debug] 	[SUCCESSFUL ] org.scala-lang.modules#scala-xml_2.12;1.0.5!scala-xml_2.12.pom(pom.original) (67ms)
+[debug] 		tried /Users/louisstephancruz/.ivy2/local/org.scala-lang.modules/scala-xml_2.12/1.0.5/bundles/scala-xml_2.12.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.5/scala-xml_2.12-1.0.5.jar
 [debug] 	found org.scala-lang.modules#scala-xml_2.12;1.0.5 in public
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.0 {test=[runtime(*), master(compile)]} => dependency: org.scala-lang#scala-compiler;2.12.2 {test=[runtime(*), master(compile)]}
@@ -459,7 +459,7 @@
 [debug] sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [info] Resolving org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 ...
 [debug] sbt-chain-delegate: Checking cache for: dependency: org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] 		tried /Users/louiscruz/.ivy2/local/org.scala-lang.modules/scala-parser-combinators_2.12/1.0.4/ivys/ivy.xml
+[debug] 		tried /Users/louisstephancruz/.ivy2/local/org.scala-lang.modules/scala-parser-combinators_2.12/1.0.4/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4
 [debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.4/scala-parser-combinators_2.12-1.0.4.pom
 [debug] 	public: found md file for org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4
@@ -468,8 +468,8 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.4/scala-parser-combinators_2.12-1.0.4.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.4/scala-parser-combinators_2.12-1.0.4.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.4/scala-parser-combinators_2.12-1.0.4.pom
-[debug] 	[SUCCESSFUL ] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4!scala-parser-combinators_2.12.pom(pom.original) (163ms)
-[debug] 		tried /Users/louiscruz/.ivy2/local/org.scala-lang.modules/scala-parser-combinators_2.12/1.0.4/bundles/scala-parser-combinators_2.12.jar
+[debug] 	[SUCCESSFUL ] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4!scala-parser-combinators_2.12.pom(pom.original) (92ms)
+[debug] 		tried /Users/louisstephancruz/.ivy2/local/org.scala-lang.modules/scala-parser-combinators_2.12/1.0.4/bundles/scala-parser-combinators_2.12.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.4/scala-parser-combinators_2.12-1.0.4.jar
 [debug] 	found org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4 in public
 [debug] dependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
@@ -1157,42 +1157,42 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.1/scalactic_2.12-3.0.1.jar
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.1/scalactic_2.12-3.0.1.jar.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.1/scalactic_2.12-3.0.1.jar
-[info] 	[SUCCESSFUL ] org.scalactic#scalactic_2.12;3.0.1!scalactic_2.12.jar(bundle) (462ms)
+[info] 	[SUCCESSFUL ] org.scalactic#scalactic_2.12;3.0.1!scalactic_2.12.jar(bundle) (223ms)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.2!scala-reflect.jar
 [debug] 		tried https://repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.1/scalatest_2.12-3.0.1.jar
 [info] downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.1/scalatest_2.12-3.0.1.jar ...
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.1/scalatest_2.12-3.0.1.jar
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.1/scalatest_2.12-3.0.1.jar.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.1/scalatest_2.12-3.0.1.jar
-[info] 	[SUCCESSFUL ] org.scalatest#scalatest_2.12;3.0.1!scalatest_2.12.jar(bundle) (1711ms)
+[info] 	[SUCCESSFUL ] org.scalatest#scalatest_2.12;3.0.1!scalatest_2.12.jar(bundle) (1065ms)
 [debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.5/scala-xml_2.12-1.0.5.jar
 [info] downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.5/scala-xml_2.12-1.0.5.jar ...
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.5/scala-xml_2.12-1.0.5.jar
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.5/scala-xml_2.12-1.0.5.jar.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.5/scala-xml_2.12-1.0.5.jar
-[info] 	[SUCCESSFUL ] org.scala-lang.modules#scala-xml_2.12;1.0.5!scala-xml_2.12.jar(bundle) (319ms)
+[info] 	[SUCCESSFUL ] org.scala-lang.modules#scala-xml_2.12;1.0.5!scala-xml_2.12.jar(bundle) (132ms)
 [debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.4/scala-parser-combinators_2.12-1.0.4.jar
 [info] downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.4/scala-parser-combinators_2.12-1.0.4.jar ...
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.4/scala-parser-combinators_2.12-1.0.4.jar
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.4/scala-parser-combinators_2.12-1.0.4.jar.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.4/scala-parser-combinators_2.12-1.0.4.jar
-[info] 	[SUCCESSFUL ] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4!scala-parser-combinators_2.12.jar(bundle) (212ms)
+[info] 	[SUCCESSFUL ] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.4!scala-parser-combinators_2.12.jar(bundle) (103ms)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.2!scala-compiler.jar
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)
 [debug] 	[NOT REQUIRED] jline#jline;2.14.3!jline.jar
-[debug] :: resolution report :: resolve 2822ms :: artifacts dl 2719ms
-[debug] 	report for default#cruzcycles_2.12;1.0 compile produced in /Users/louiscruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-compile.xml
-[debug] 	report for default#cruzcycles_2.12;1.0 runtime produced in /Users/louiscruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-runtime.xml
-[debug] 	report for default#cruzcycles_2.12;1.0 test produced in /Users/louiscruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-test.xml
-[debug] 	report for default#cruzcycles_2.12;1.0 provided produced in /Users/louiscruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-provided.xml
-[debug] 	report for default#cruzcycles_2.12;1.0 optional produced in /Users/louiscruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-optional.xml
-[debug] 	report for default#cruzcycles_2.12;1.0 compile-internal produced in /Users/louiscruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-compile-internal.xml
-[debug] 	report for default#cruzcycles_2.12;1.0 runtime-internal produced in /Users/louiscruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-runtime-internal.xml
-[debug] 	report for default#cruzcycles_2.12;1.0 test-internal produced in /Users/louiscruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-test-internal.xml
-[debug] 	report for default#cruzcycles_2.12;1.0 plugin produced in /Users/louiscruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-plugin.xml
-[debug] 	report for default#cruzcycles_2.12;1.0 sources produced in /Users/louiscruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-sources.xml
-[debug] 	report for default#cruzcycles_2.12;1.0 docs produced in /Users/louiscruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-docs.xml
-[debug] 	report for default#cruzcycles_2.12;1.0 pom produced in /Users/louiscruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-pom.xml
-[debug] 	report for default#cruzcycles_2.12;1.0 scala-tool produced in /Users/louiscruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-scala-tool.xml
-[debug] 	resolve done (2822ms resolve - 2719ms download)
+[debug] :: resolution report :: resolve 1209ms :: artifacts dl 1530ms
+[debug] 	report for default#cruzcycles_2.12;1.0 compile produced in /Users/louisstephancruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-compile.xml
+[debug] 	report for default#cruzcycles_2.12;1.0 runtime produced in /Users/louisstephancruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-runtime.xml
+[debug] 	report for default#cruzcycles_2.12;1.0 test produced in /Users/louisstephancruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-test.xml
+[debug] 	report for default#cruzcycles_2.12;1.0 provided produced in /Users/louisstephancruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-provided.xml
+[debug] 	report for default#cruzcycles_2.12;1.0 optional produced in /Users/louisstephancruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-optional.xml
+[debug] 	report for default#cruzcycles_2.12;1.0 compile-internal produced in /Users/louisstephancruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-compile-internal.xml
+[debug] 	report for default#cruzcycles_2.12;1.0 runtime-internal produced in /Users/louisstephancruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-runtime-internal.xml
+[debug] 	report for default#cruzcycles_2.12;1.0 test-internal produced in /Users/louisstephancruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-test-internal.xml
+[debug] 	report for default#cruzcycles_2.12;1.0 plugin produced in /Users/louisstephancruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-plugin.xml
+[debug] 	report for default#cruzcycles_2.12;1.0 sources produced in /Users/louisstephancruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-sources.xml
+[debug] 	report for default#cruzcycles_2.12;1.0 docs produced in /Users/louisstephancruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-docs.xml
+[debug] 	report for default#cruzcycles_2.12;1.0 pom produced in /Users/louisstephancruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-pom.xml
+[debug] 	report for default#cruzcycles_2.12;1.0 scala-tool produced in /Users/louisstephancruz/Desktop/CruzCycles/target/resolution-cache/reports/default-cruzcycles_2.12-scala-tool.xml
+[debug] 	resolve done (1209ms resolve - 1530ms download)
 [info] Done updating.

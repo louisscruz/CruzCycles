@@ -10,7 +10,7 @@ import CruzCycles._
 class CruzCyclesTest extends FlatSpec {
   "Something" should "do something" in {
     val CruzCycles = new CruzCycles()
-    println(CruzCycles.getFile())
+    CruzCycles.getFile()
     assert(1 === 1)
   }
 }
