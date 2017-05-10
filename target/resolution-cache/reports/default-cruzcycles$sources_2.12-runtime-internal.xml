@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170501192651"/>
+		date="20170504230428"/>
 	<dependencies>
 		<module organisation="org.scalactic" name="scalactic_2.12">
 			<revision name="3.0.1" status="release" pubdate="20161109215016" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
@@ -15,7 +15,7 @@
 				<metadata-artifact status="no" details="" size="2967" time="0" location="/Users/louisstephancruz/.ivy2/cache/org.scalactic/scalactic_2.12/ivy-3.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.1/scalactic_2.12-3.0.1.pom"/>
 				<caller organisation="default" name="cruzcycles$sources_2.12" conf="compile, runtime-internal, runtime, optional" rev="3.0.1" rev-constraint-default="3.0.1" rev-constraint-dynamic="3.0.1" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="scalactic_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="201082" time="135" location="/Users/louisstephancruz/.ivy2/cache/org.scalactic/scalactic_2.12/srcs/scalactic_2.12-3.0.1-sources.jar">
+					<artifact name="scalactic_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="201082" time="0" location="/Users/louisstephancruz/.ivy2/cache/org.scalactic/scalactic_2.12/srcs/scalactic_2.12-3.0.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.1/scalactic_2.12-3.0.1-sources.jar"/>
 					</artifact>
 				</artifacts>

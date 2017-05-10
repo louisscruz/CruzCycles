@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddf0017b-00b7-4a59-98da-c6539d64bd5c" name="Default" comment="" />
+    <list default="true" id="55ce4ecb-db01-4db3-ae01-d358254c11b8" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThesaurusSynonyms.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ThesaurusSynonyms.txt-E" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/CruzCycles.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/CruzCycles/CruzCycles.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/test-classes/com/test/CruzCyclesTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala-2.12/com/test/CruzCyclesTest.scala" afterPath="$PROJECT_DIR$/src/test/scala-2.12/com/test/CruzCyclesTest.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/cruzcycles$sources_2.12/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/default/cruzcycles$sources_2.12/1.0/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/cruzcycles$sources_2.12/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/default/cruzcycles$sources_2.12/1.0/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-compile-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-compile-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-compile.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-docs.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-docs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-optional.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-optional.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-plugin.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-pom.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-provided.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-provided.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-runtime-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-runtime-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-runtime.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-runtime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-scala-tool.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-scala-tool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-sources.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-sources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-test-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-test-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-test.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-cruzcycles$sources_2.12-test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/ivyConfiguration/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/ivyConfiguration/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thesaurus.txt" afterPath="$PROJECT_DIR$/thesaurus.txt" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
     <ignored path="$PROJECT_DIR$/project/target/" />
@@ -22,28 +52,33 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="CruzCycles.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/CruzCycles.scala">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="package.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/package.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="46" column="11" lean-forward="true" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
-              <folding />
+            <state relative-caret-position="465">
+              <caret line="31" column="75" lean-forward="true" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CruzCyclesTest.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CruzCyclesTest.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/scala-2.12/com/test/CruzCyclesTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+            <state relative-caret-position="375">
+              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -53,15 +88,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/package.scala" />
         <option value="$PROJECT_DIR$/src/test/scala-2.12/com/test/CruzCyclesTest.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/CruzCycles.scala" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
     <option name="width" value="2560" />
-    <option name="height" value="1413" />
+    <option name="height" value="1440" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -78,7 +112,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -88,6 +122,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="CruzCycles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CruzCycles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CruzCycles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -142,15 +190,30 @@
               <option name="myItemId" value="CruzCycles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="package.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
-  <component name="RunManager" selected="ScalaTest.CruzCyclesTest.Something should do something">
-    <configuration default="false" name="CruzCyclesTest.Something should do something" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+  <component name="PropertiesComponent">
+    <property name="FullScreen" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/scala-2.12/CruzCycles" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/scala-2.12" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="ScalaTest.CruzCyclesTest">
+    <configuration default="false" name="CruzCyclesTest.generateThesaurus should do something" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="cruzcycles" />
       <setting name="path" value="com.test.CruzCyclesTest" />
@@ -159,8 +222,76 @@
       <setting name="params" value="" />
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
       <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="Something should do something" />
+      <setting name="testName" value="generateThesaurus should do something" />
       <setting name="testKind" value="Test name" />
+      <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="CruzCyclesTest.generateThesaurus should create a map of the correct size" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="cruzcycles" />
+      <setting name="path" value="com.test.CruzCyclesTest" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="generateThesaurus should create a map of the correct size" />
+      <setting name="testKind" value="Test name" />
+      <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="CruzCyclesTest.findCruzCycles should do something" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="cruzcycles" />
+      <setting name="path" value="com.test.CruzCyclesTest" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="findCruzCycles should do something" />
+      <setting name="testKind" value="Test name" />
+      <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="CruzCyclesTest.synonymsFor shold do something" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="cruzcycles" />
+      <setting name="path" value="com.test.CruzCyclesTest" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="synonymsFor shold do something" />
+      <setting name="testKind" value="Test name" />
+      <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="CruzCyclesTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="cruzcycles" />
+      <setting name="path" value="com.test.CruzCyclesTest" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
       <setting name="showProgressMessages" value="true" />
       <classRegexps />
       <testRegexps />
@@ -422,17 +553,25 @@
       <envs />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.Something should do something" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.generateThesaurus should do something" />
+      <item index="1" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.generateThesaurus should create a map of the correct size" />
+      <item index="2" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.findCruzCycles should do something" />
+      <item index="3" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.synonymsFor shold do something" />
+      <item index="4" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.Something should do something" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest" />
+        <item index="1" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.synonymsFor shold do something" />
+        <item index="2" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.findCruzCycles should do something" />
+        <item index="3" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.generateThesaurus should create a map of the correct size" />
+        <item index="4" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.generateThesaurus should do something" />
       </list>
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1493692012259" />
+    <option name="lastUpdateTimestamp" value="1493964270716" />
     <option name="availableProjects">
       <map>
         <entry>
@@ -459,6 +598,7 @@
     </option>
     <option name="modificationStamps">
       <map>
+        <entry key="$PROJECT_DIR$/../boardpaths" value="1493862808000" />
         <entry key="$PROJECT_DIR$/../example" value="1459548774000" />
         <entry key="$PROJECT_DIR$/../forcomp" value="1462342012000" />
         <entry key="$PROJECT_DIR$/../functional_programming_principles/w3/objsets" value="1462351646000" />
@@ -477,80 +617,80 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ddf0017b-00b7-4a59-98da-c6539d64bd5c" name="Default" comment="" />
-      <created>1493691993102</created>
+      <changelist id="55ce4ecb-db01-4db3-ae01-d358254c11b8" name="Default" comment="" />
+      <created>1493964239946</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1493691993102</updated>
+      <updated>1493964239946</updated>
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CruzCyclesTest_Something_should_do_something - 2017.05.01 at 22h 23m 09s.xml">
-      <configuration name="CruzCyclesTest.Something should do something" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest - 2017.05.09 at 23h 01m 20s.xml">
+      <configuration name="CruzCyclesTest" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_Something_should_do_something - 2017.05.01 at 22h 23m 16s.xml">
-      <configuration name="CruzCyclesTest.Something should do something" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest - 2017.05.09 at 23h 14m 04s.xml">
+      <configuration name="CruzCyclesTest" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_Something_should_do_something - 2017.05.01 at 22h 24m 35s.xml">
-      <configuration name="CruzCyclesTest.Something should do something" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest - 2017.05.09 at 23h 14m 29s.xml">
+      <configuration name="CruzCyclesTest" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_Something_should_do_something - 2017.05.01 at 22h 25m 56s.xml">
-      <configuration name="CruzCyclesTest.Something should do something" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest - 2017.05.09 at 23h 14m 35s.xml">
+      <configuration name="CruzCyclesTest" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_Something_should_do_something - 2017.05.01 at 22h 26m 54s.xml">
-      <configuration name="CruzCyclesTest.Something should do something" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_findCruzCycles_should_do_something - 2017.05.09 at 22h 51m 18s.xml">
+      <configuration name="CruzCyclesTest.findCruzCycles should do something" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_Something_should_do_something - 2017.05.01 at 22h 28m 15s.xml">
-      <configuration name="CruzCyclesTest.Something should do something" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_findCruzCycles_should_do_something - 2017.05.09 at 22h 57m 48s.xml">
+      <configuration name="CruzCyclesTest.findCruzCycles should do something" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_Something_should_do_something - 2017.05.01 at 22h 29m 26s.xml">
-      <configuration name="CruzCyclesTest.Something should do something" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_synonymsFor_shold_do_something - 2017.05.09 at 22h 58m 07s.xml">
+      <configuration name="CruzCyclesTest.synonymsFor shold do something" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_Something_should_do_something - 2017.05.01 at 22h 46m 21s.xml">
-      <configuration name="CruzCyclesTest.Something should do something" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_synonymsFor_shold_do_something - 2017.05.09 at 22h 58m 49s.xml">
+      <configuration name="CruzCyclesTest.synonymsFor shold do something" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_Something_should_do_something - 2017.05.01 at 22h 57m 17s.xml">
-      <configuration name="CruzCyclesTest.Something should do something" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_synonymsFor_shold_do_something - 2017.05.09 at 22h 59m 01s.xml">
+      <configuration name="CruzCyclesTest.synonymsFor shold do something" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_Something_should_do_something - 2017.05.01 at 22h 59m 41s.xml">
-      <configuration name="CruzCyclesTest.Something should do something" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_synonymsFor_shold_do_something - 2017.05.09 at 23h 01m 08s.xml">
+      <configuration name="CruzCyclesTest.synonymsFor shold do something" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2560" height="1413" extended-state="6" />
+    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296131" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296131" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950467" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32950467" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -565,18 +705,82 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/scala-2.12/com/test/CruzCyclesTest.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/package.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/worksheet.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/CruzCycles.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/package.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="11" lean-forward="true" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/worksheet.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/package.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/worksheet.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/worksheet.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/package.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="75" lean-forward="true" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala-2.12/com/test/CruzCyclesTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding />
         </state>
       </provider>
