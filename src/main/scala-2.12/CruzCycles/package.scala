@@ -1,25 +1,23 @@
-/**
-  * Created by louisstephancruz on 5/4/17.
-  */
-
 import scala.io.Source
 
 package object CruzCycles {
   type Thesaurus = Map[String, (Set[String], Set[String])]
 
-  def generateThesaurus(): Map[String, (Set[String], Set[String])] = {
+  lazy val thesaurus = generateThesaurus()
+
+  def generateThesaurus(): Thesaurus = {
     def getThesaurusLines(): List[String] = {
       val filename = "Thesaurus.txt"
       Source.fromFile(filename).getLines.toList
     }
 
     def generateThesaurusAcc(thesaurus: Thesaurus, lines: List[String]): Thesaurus = lines match {
-      case Nil => thesaurus
+      case Nil => thesaurus.withDefaultValue((Set[String](), Set[String]()))
       case x :: xs => {
         val split = x.split(';')
         val word = split(0)
         val synonyms = split(1).split(',').toSet
-        val antonyms = if (split.length == 2) Set[String]() else Set(split(2))
+        val antonyms = if (split.length == 2) Set[String]() else split(2).split(',').toSet
 
         val newThesaurus: Thesaurus = thesaurus updated (word, (synonyms, antonyms))
         generateThesaurusAcc(newThesaurus, xs)
@@ -29,16 +27,20 @@ package object CruzCycles {
     generateThesaurusAcc(Map(), getThesaurusLines())
   }
 
-  def synonymsFor(word: String): Set[String] = generateThesaurus()(word)._1
+  def synonymsFor(word: String): Set[String] = thesaurus(word)._1
 
-  def findCruzCycles(source: String): List[String] = {
+  def antonymsFor(word: String): Set[String] = thesaurus(word)._2
+
+  def findCruzCycle(source: String): List[String] = {
     val thesaurus = generateThesaurus()
-    thesaurus(source)._1
+    val (synonyms, antonyms) = thesaurus(source)
 
-    def findCruzCyclesAcc(visited: Set[String], originalWord: String, currentWord: String): List[String] = {
-      List("test")
+    if (antonyms.size == 0) return List()
+
+    def findCruzCyclesAcc(target: String, visited: Set[String], currentWords: Set[String]): List[String] = {
+      synonymsFor(target).toList
     }
 
-    findCruzCyclesAcc(Set[String](), source, source)
+    findCruzCyclesAcc(source, Set[String](), synonymsFor(source))
   }
 }

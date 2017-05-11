@@ -4,27 +4,56 @@ import org.scalatest.FunSpec
 
 import CruzCycles._
 
-/**
-  * Created by louiscruz on 5/1/17.
-  */
 class CruzCyclesTest extends FunSpec {
-  describe("generateThesaurus") {
-    val thesaurus = generateThesaurus()
+  val thesaurus = generateThesaurus()
 
+  describe("generateThesaurus") {
     it("should create a map of the correct size") {
       assert(thesaurus.size === 121449)
     }
   }
 
   describe("synonymsFor") {
-    it("should produce the correct number of synonyms") {
-      assert(synonymsFor("zip").size === 28)
+    describe("when the word does not exist") {
+      it("should produce the correct number of synonyms") {
+        assert(synonymsFor("piz").size === 0)
+      }
+    }
+
+    describe("when the word exists") {
+      it("should produce the correct number of synonyms") {
+        assert(synonymsFor("zip").size === 28)
+      }
     }
   }
 
-  describe("findCruzCycles") {
-    it("should do something") {
-      println(findCruzCycles("test"))
+  describe("antonymsFor") {
+    describe("when the word does not exist") {
+      it("should return an empty list") {
+        assert(antonymsFor("zxcv").size === 0)
+      }
+    }
+
+    describe("when the word exists") {
+      it("should produce the correct number of antonyms") {
+        assert(antonymsFor("incomprehensible").size === 2)
+      }
+    }
+  }
+
+  describe("findCruzCycle") {
+    describe("when no cycle exists") {
+      describe("when there is no antonym") {
+        it("returns an empty list") {
+          assert(findCruzCycle("boston cream pie") === List())
+        }
+      }
+    }
+
+    describe("when a cycle exists") {
+      it("should return a proper cycle") {
+        assert(findCruzCycle("big") === List("big"))
+      }
     }
   }
 }
