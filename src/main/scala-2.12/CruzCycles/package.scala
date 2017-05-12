@@ -31,16 +31,30 @@ package object CruzCycles {
 
   def antonymsFor(word: String): Set[String] = thesaurus(word)._2
 
-  def findCruzCycle(source: String): List[String] = {
+  def findCruzCycle(source: String): Any = {
     val thesaurus = generateThesaurus()
     val (synonyms, antonyms) = thesaurus(source)
 
     if (antonyms.size == 0) return List()
 
-    def findCruzCyclesAcc(target: String, visited: Set[String], currentWords: Set[String]): List[String] = {
-      synonymsFor(target).toList
+    def findCruzCyclesAcc(target: String, currentWords: Set[String], visited: Set[String]): Any = {
+      def exploreWords(starters: Set[String]): Set[String] = {
+        for {
+          starter <- starters
+          synonym <- synonymsFor(starter)
+          if !(visited contains synonym)
+        } yield synonym
+      }
+
+      val exploredWords = exploreWords(currentWords)
+      println(exploredWords.size)
+
+      currentWords.size match {
+        case 0 => visited.size
+        case _ => findCruzCyclesAcc(target, exploredWords, visited ++ exploredWords)
+      }
     }
 
-    findCruzCyclesAcc(source, Set[String](), synonymsFor(source))
+    findCruzCyclesAcc(source, synonymsFor(source), Set[String]())
   }
 }
