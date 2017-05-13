@@ -50,12 +50,24 @@ class CruzCyclesTest extends FunSpec {
           assert(findCruzCycle("boston cream pie") === List())
         }
       }
+
+      describe("when there happens to be no cycle") {
+        it("returns an empty list") {
+          val noCycles = List("yellow, brick, road")
+          val allInvalid = noCycles forall (el => findCruzCycle(el) === List())
+          assert(allInvalid)
+        }
+      }
     }
 
     describe("when a cycle exists") {
       it("should return a proper cycle") {
-//        assert(findCruzCycle("big") === List("big"))
-        println(findCruzCycle("big"))
+        val cycles = List("generous", "loud", "quiet", "beautiful", "thoughtful")
+        val allValid = cycles forall (el => {
+          val cycle = findCruzCycle(el)
+          antonymsFor(el) contains cycle.last
+        })
+        assert(allValid)
       }
     }
   }

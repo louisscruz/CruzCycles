@@ -1,7 +1,9 @@
 import scala.io.Source
+import scala.util.Random
 
 package object CruzCycles {
   type Thesaurus = Map[String, (Set[String], Set[String])]
+  type StringMapping = Map[String, String]
 
   lazy val thesaurus = generateThesaurus()
 
@@ -31,30 +33,41 @@ package object CruzCycles {
 
   def antonymsFor(word: String): Set[String] = thesaurus(word)._2
 
-  def findCruzCycle(source: String): Any = {
-    val thesaurus = generateThesaurus()
+  def findCruzCycle(source: String): List[String] = {
     val (synonyms, antonyms) = thesaurus(source)
-
     if (antonyms.size == 0) return List()
 
-    def findCruzCyclesAcc(target: String, currentWords: Set[String], visited: Set[String]): Any = {
-      def exploreWords(starters: Set[String]): Set[String] = {
-        for {
-          starter <- starters
-          synonym <- synonymsFor(starter)
-          if !(visited contains synonym)
-        } yield synonym
+    def findCruzCyclesAcc(currentWords: Set[String], visited: StringMapping): List[String] = {
+      def backTrack(antonym: String): List[String] = {
+        def backTrackAcc(word: String, acc: List[String]): List[String] =
+          if (word == source) word :: acc else backTrackAcc(visited(word), word :: acc)
+
+        backTrackAcc(antonym, List())
       }
 
-      val exploredWords = exploreWords(currentWords)
-      println(exploredWords.size)
+      def generateNextWords(): StringMapping = {
+        def generateNextWordsAcc(siblings: List[String], acc: StringMapping): StringMapping = siblings match {
+          case List() => acc
+          case x :: xs => {
+            val newSynonyms = (for {
+              synonym <- synonymsFor(x)
+              if (!(acc contains synonym) && !(visited contains synonym) && !(currentWords contains synonym))
+            } yield (synonym, x)).toMap
+            generateNextWordsAcc(xs, acc ++ newSynonyms)
+          }
+        }
 
-      currentWords.size match {
-        case 0 => visited.size
-        case _ => findCruzCyclesAcc(target, exploredWords, visited ++ exploredWords)
+        generateNextWordsAcc(currentWords.toList, Map())
       }
+
+      for (word <- currentWords) if (antonyms contains word) return backTrack(word)
+      val nextWords = generateNextWords()
+      if (nextWords.size < 1)
+        List()
+      else
+        findCruzCyclesAcc(nextWords.keySet, visited ++ nextWords)
     }
-
-    findCruzCyclesAcc(source, synonymsFor(source), Set[String]())
+    val initialMap = (for (synonym <- synonyms) yield (synonym, source)).toMap
+    findCruzCyclesAcc(synonyms, initialMap)
   }
 }
