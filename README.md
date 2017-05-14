@@ -6,4 +6,4 @@ This project detects chains of synonyms that terminate on an antonym of the sour
 thoughtful, serious, sincere, artless, careless, heedless
 ```
 
-Thanks has to be given to [WordNet](https://wordnet.princeton.edu/) provided by Princeton University, with which this project was built.
+Thanks has to be given to Princeton University's [WordNet](https://wordnet.princeton.edu/), the thesaurus on which this project relies.
