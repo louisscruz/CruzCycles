@@ -1,9 +1,10 @@
 import scala.io.Source
-import scala.util.Random
 
 package object CruzCycles {
   type Thesaurus = Map[String, (Set[String], Set[String])]
   type StringMapping = Map[String, String]
+  type Cycle = List[String]
+  type CycleList = List[Cycle]
 
   lazy val thesaurus = generateThesaurus()
 
@@ -20,7 +21,6 @@ package object CruzCycles {
         val word = split(0)
         val synonyms = split(1).split(',').toSet
         val antonyms = if (split.length == 2) Set[String]() else split(2).split(',').toSet
-
         val newThesaurus: Thesaurus = thesaurus updated (word, (synonyms, antonyms))
         generateThesaurusAcc(newThesaurus, xs)
       }
@@ -33,20 +33,22 @@ package object CruzCycles {
 
   def antonymsFor(word: String): Set[String] = thesaurus(word)._2
 
-  def findCruzCycle(source: String): List[String] = {
+  def findCruzCycle(source: String): Cycle = {
     val (synonyms, antonyms) = thesaurus(source)
     if (antonyms.size == 0) return List()
 
-    def findCruzCyclesAcc(currentWords: Set[String], visited: StringMapping): List[String] = {
-      def backTrack(antonym: String): List[String] = {
-        def backTrackAcc(word: String, acc: List[String]): List[String] =
+    def findCruzCyclesAcc(currentWords: Set[String], visited: StringMapping): Cycle = {
+//      println(currentWords)
+      if (currentWords.isEmpty) return List()
+      def backTrack(antonym: String): Cycle = {
+        def backTrackAcc(word: String, acc: Cycle): Cycle =
           if (word == source) word :: acc else backTrackAcc(visited(word), word :: acc)
 
         backTrackAcc(antonym, List())
       }
 
       def generateNextWords(): StringMapping = {
-        def generateNextWordsAcc(siblings: List[String], acc: StringMapping): StringMapping = siblings match {
+        def generateNextWordsAcc(siblings: Cycle, acc: StringMapping): StringMapping = siblings match {
           case List() => acc
           case x :: xs => {
             val newSynonyms = (for {
@@ -62,12 +64,38 @@ package object CruzCycles {
 
       for (word <- currentWords) if (antonyms contains word) return backTrack(word)
       val nextWords = generateNextWords()
-      if (nextWords.size < 1)
-        List()
-      else
-        findCruzCyclesAcc(nextWords.keySet, visited ++ nextWords)
+      findCruzCyclesAcc(nextWords.keySet, visited ++ nextWords)
     }
+
     val initialMap = (for (synonym <- synonyms) yield (synonym, source)).toMap
     findCruzCyclesAcc(synonyms, initialMap)
   }
+
+  def allCycles(): CycleList = thesaurus map { case (k, _) => findCruzCycle(k) } toList
+
+  def cycleComparison(cycles: CycleList, temp: Int, cmp: (Int, Int) => Int): CycleList = {
+    def cycleComparisonAcc(cycles: CycleList, i: Int, acc: CycleList): CycleList = cycles match {
+      case Nil => List(List())
+      case x :: Nil => cmp(x.size, i) match {
+        case 1 => List(x)
+        case 0 => x :: acc
+        case -1 => acc
+      }
+      case x :: xs => cmp(x.size, i) match {
+        case 1 => cycleComparisonAcc(xs, x.size, List(x))
+        case 0 => cycleComparisonAcc(xs, i, x :: acc)
+        case -1 => cycleComparisonAcc(xs, i, acc)
+      }
+    }
+
+    cycleComparisonAcc(cycles, temp, List(List()))
+  }
+
+  def minComparator(length: Int, i: Int): Int = if (length < i) 1 else if (length > i) -1 else 0
+
+  def maxComparator(length: Int, i: Int): Int = if (length > i) 1 else if (length < i) -1 else 0
+
+  def minCycle(cycles: CycleList): CycleList = cycleComparison(cycles, Int.MaxValue, minComparator)
+
+  def maxCycle(cycles: CycleList): CycleList = cycleComparison(cycles, Int.MinValue, maxComparator)
 }

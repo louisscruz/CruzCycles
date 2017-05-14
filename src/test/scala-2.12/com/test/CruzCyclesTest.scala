@@ -5,11 +5,12 @@ import org.scalatest.FunSpec
 import CruzCycles._
 
 class CruzCyclesTest extends FunSpec {
-  val thesaurus = generateThesaurus()
+  val three = List("one", "two", "three")
+  val four = List("one", "two", "three", "four")
 
   describe("generateThesaurus") {
     it("should create a map of the correct size") {
-      assert(thesaurus.size === 121449)
+      assert(generateThesaurus().size === 121449)
     }
   }
 
@@ -36,8 +37,6 @@ class CruzCyclesTest extends FunSpec {
 
     describe("when the word exists") {
       it("should produce the correct number of antonyms") {
-//        println(antonymsFor("big"))
-//        thesaurus foreach (el => println(el._2._2.size))
         assert(antonymsFor("incomprehensible").size === 2)
       }
     }
@@ -62,12 +61,60 @@ class CruzCyclesTest extends FunSpec {
 
     describe("when a cycle exists") {
       it("should return a proper cycle") {
-        val cycles = List("generous", "loud", "quiet", "beautiful", "thoughtful")
+        val cycles = List("all", "some", "generous", "beautiful", "thoughtful")
         val allValid = cycles forall (el => {
           val cycle = findCruzCycle(el)
           antonymsFor(el) contains cycle.last
         })
         assert(allValid)
+      }
+    }
+  }
+
+  describe("minCycle") {
+    describe("when there is no min") {
+      it("should return an empty list in a list") {
+        assert(minCycle(List(List())) === List(List()))
+      }
+    }
+
+    describe("when there is a min") {
+      describe("when there is a single nadir") {
+        it("should return the correct cycle") {
+          val cycles = List(three, four)
+          assert(minCycle(cycles) === List(three))
+        }
+      }
+
+      describe("when there are multiple nadirs") {
+        it("should return the correct cycles") {
+          val cycles = List(three, four, three, four)
+          assert(minCycle(cycles) === List(three, three))
+        }
+      }
+    }
+  }
+
+  describe("maxCycle") {
+    describe("when there is no max") {
+      it("should return an empty list in a list") {
+        assert(maxCycle(List(List())) === List(List()))
+      }
+    }
+
+    describe("when there is a max") {
+      describe("when there is a single apex") {
+        it("should return the correct cycle") {
+          val cycles = List(three, four)
+          assert(maxCycle(cycles) === List(four))
+        }
+      }
+
+      describe("when there are multiple apexes") {
+        it("should return the correct cycles") {
+          val cycles = List(three, four, three, four)
+          assert(maxCycle(cycles) === List(four, four))
+        }
       }
     }
   }
