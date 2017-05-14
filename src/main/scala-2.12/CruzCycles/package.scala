@@ -38,7 +38,6 @@ package object CruzCycles {
     if (antonyms.size == 0) return List()
 
     def findCruzCyclesAcc(currentWords: Set[String], visited: StringMapping): Cycle = {
-//      println(currentWords)
       if (currentWords.isEmpty) return List()
       def backTrack(antonym: String): Cycle = {
         def backTrackAcc(word: String, acc: Cycle): Cycle =
