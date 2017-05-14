@@ -11,5 +11,5 @@ The relevant code is located in [this package][package], and the tests are locat
 Thanks has to be given to Princeton University's [WordNet][word-net], the thesaurus on which this project relies.
 
 [package]: ./src/main/scala-2.12/CruzCycles/package.scala
-[tests]: ./src/test/scala-2.12/com.test/CruzCyclesTest.scala
+[tests]: ./src/test/scala-2.12/com/test/CruzCyclesTest.scala
 [word-net]: https://wordnet.princeton.edu/
