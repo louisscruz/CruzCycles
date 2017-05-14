@@ -30,4 +30,4 @@ end
 
 new_thesaurus = thesaurus_lines.join("\n")
 
-File.open('thesaurus_new.txt', 'w') { |file| file.write(new_thesaurus) }
+File.open('thesaurus_new.txt', 'w') { |file| file.write(thesaurus) }

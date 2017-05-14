@@ -10,7 +10,7 @@ package object CruzCycles {
 
   def generateThesaurus(): Thesaurus = {
     def getThesaurusLines(): List[String] = {
-      val filename = "Thesaurus.txt"
+      val filename = "thesaurus.txt"
       Source.fromFile(filename).getLines.toList
     }
 
