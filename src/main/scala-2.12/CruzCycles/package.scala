@@ -15,7 +15,7 @@ package object CruzCycles {
     }
 
     def generateThesaurusAcc(thesaurus: Thesaurus, lines: List[String]): Thesaurus = lines match {
-      case Nil => thesaurus.withDefaultValue((Set[String](), Set[String]()))
+      case Nil => thesaurus.withDefaultValue((Set(), Set()))
       case x :: xs => {
         val split = x.split(';')
         val word = split(0)
@@ -38,7 +38,7 @@ package object CruzCycles {
       if (current.size < 1)
         visited
       else {
-        val nextWords: Set[String] = (for {
+        val nextWords = (for {
           word <- current
           nextWords <- (synonymsFor(word) -- visited)
         } yield nextWords)
