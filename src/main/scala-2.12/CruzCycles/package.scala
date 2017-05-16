@@ -40,7 +40,7 @@ package object CruzCycles {
       else {
         val nextWords: Set[String] = (for {
           word <- current
-          nextWords <- synonymsFor(word) diff visited
+          nextWords <- (synonymsFor(word) -- visited)
         } yield nextWords)
         exploreSynonymsAcc(nextWords, visited ++ nextWords)
       }
