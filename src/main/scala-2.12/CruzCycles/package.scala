@@ -33,6 +33,22 @@ package object CruzCycles {
 
   def antonymsFor(word: String): Set[String] = thesaurus(word)._2
 
+  def exploreSynonyms(word: String): Set[String] = {
+    def exploreSynonymsAcc(current: Set[String], visited: Set[String]): Set[String] = {
+      if (current.size < 1)
+        visited
+      else {
+        val nextWords: Set[String] = (for {
+          word <- current
+          nextWords <- synonymsFor(word) diff visited
+        } yield nextWords)
+        exploreSynonymsAcc(nextWords, visited ++ nextWords)
+      }
+    }
+
+    exploreSynonymsAcc(Set(word), Set(word))
+  }
+
   def findCruzCycle(source: String): Cycle = {
     val (synonyms, antonyms) = thesaurus(source)
     if (antonyms.size == 0) return List()

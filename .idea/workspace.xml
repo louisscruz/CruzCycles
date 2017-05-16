@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="55ce4ecb-db01-4db3-ae01-d358254c11b8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reformat_thesaurus.rb" afterPath="$PROJECT_DIR$/reformat_thesaurus.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/package.scala" afterPath="$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/package.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala-2.12/com/test/CruzCyclesTest.scala" afterPath="$PROJECT_DIR$/src/test/scala-2.12/com/test/CruzCyclesTest.scala" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -30,8 +30,8 @@
       <file leaf-file-name="package.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/package.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+            <state relative-caret-position="495">
+              <caret line="49" column="3" lean-forward="false" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -41,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+              <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -60,8 +60,8 @@
       <file leaf-file-name="CruzCyclesTest.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala-2.12/com/test/CruzCyclesTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="65" column="39" lean-forward="false" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
+            <state relative-caret-position="345">
+              <caret line="40" column="7" lean-forward="true" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -88,9 +88,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/worksheet.sc" />
-        <option value="$PROJECT_DIR$/src/test/scala-2.12/com/test/CruzCyclesTest.scala" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/reformat_thesaurus.rb" />
+        <option value="$PROJECT_DIR$/src/test/scala-2.12/com/test/CruzCyclesTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/package.scala" />
       </list>
     </option>
@@ -117,9 +117,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -171,13 +168,12 @@
               <option name="myItemId" value="CruzCycles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="package.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -191,24 +187,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="ScalaTest.CruzCyclesTest">
-    <configuration default="false" name="CruzCyclesTest.synonymsFor shold do something" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="cruzcycles" />
-      <setting name="path" value="com.test.CruzCyclesTest" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="synonymsFor shold do something" />
-      <setting name="testKind" value="Test name" />
-      <setting name="showProgressMessages" value="true" />
-      <classRegexps />
-      <testRegexps />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="ScalaTest.CruzCyclesTest.exploreSynonyms should return all the possible synonyms that can be reached">
     <configuration default="false" name="CruzCyclesTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="cruzcycles" />
@@ -270,6 +249,23 @@
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
       <setting name="searchForTest" value="Across module dependencies" />
       <setting name="testName" value="minCycle when there is a min when there are multiple nadirs should return the correct cycles" />
+      <setting name="testKind" value="Test name" />
+      <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="CruzCyclesTest.exploreSynonyms should return all the possible synonyms that can be reached" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="cruzcycles" />
+      <setting name="path" value="com.test.CruzCyclesTest" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="exploreSynonyms should return all the possible synonyms that can be reached" />
       <setting name="testKind" value="Test name" />
       <setting name="showProgressMessages" value="true" />
       <classRegexps />
@@ -533,19 +529,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.synonymsFor shold do something" />
-      <item index="1" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest" />
-      <item index="2" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.findCruzCycles when no cycle exists returns an empty list when there is no antonym" />
-      <item index="3" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.findCruzCycle when a cycle exists should return a proper cycle" />
-      <item index="4" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.minCycle when there is a min when there are multiple nadirs should return the correct cycles" />
+      <item index="0" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest" />
+      <item index="1" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.findCruzCycles when no cycle exists returns an empty list when there is no antonym" />
+      <item index="2" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.findCruzCycle when a cycle exists should return a proper cycle" />
+      <item index="3" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.minCycle when there is a min when there are multiple nadirs should return the correct cycles" />
+      <item index="4" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.exploreSynonyms should return all the possible synonyms that can be reached" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest" />
-        <item index="1" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.minCycle when there is a min when there are multiple nadirs should return the correct cycles" />
-        <item index="2" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.findCruzCycle when a cycle exists should return a proper cycle" />
-        <item index="3" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.findCruzCycles when no cycle exists returns an empty list when there is no antonym" />
-        <item index="4" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.synonymsFor shold do something" />
+        <item index="0" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.exploreSynonyms should return all the possible synonyms that can be reached" />
+        <item index="1" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest" />
+        <item index="2" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.minCycle when there is a min when there are multiple nadirs should return the correct cycles" />
+        <item index="3" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.findCruzCycle when a cycle exists should return a proper cycle" />
+        <item index="4" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.findCruzCycles when no cycle exists returns an empty list when there is no antonym" />
       </list>
     </recent_temporary>
   </component>
@@ -608,35 +604,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CruzCyclesTest - 2017.05.13 at 20h 08m 55s.xml">
-      <configuration name="CruzCyclesTest" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_exploreSynonyms_should_return_all_the_possible_synonyms_that_can_be_reached - 2017.05.15 at 20h 34m 53s.xml">
+      <configuration name="CruzCyclesTest.exploreSynonyms should return all the possible synonyms that can be reached" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest - 2017.05.13 at 20h 09m 30s.xml">
-      <configuration name="CruzCyclesTest" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_exploreSynonyms_should_return_all_the_possible_synonyms_that_can_be_reached - 2017.05.15 at 20h 35m 31s.xml">
+      <configuration name="CruzCyclesTest.exploreSynonyms should return all the possible synonyms that can be reached" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest - 2017.05.13 at 20h 09m 37s.xml">
-      <configuration name="CruzCyclesTest" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_exploreSynonyms_should_return_all_the_possible_synonyms_that_can_be_reached - 2017.05.15 at 20h 37m 40s.xml">
+      <configuration name="CruzCyclesTest.exploreSynonyms should return all the possible synonyms that can be reached" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest - 2017.05.13 at 20h 11m 43s.xml">
-      <configuration name="CruzCyclesTest" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_exploreSynonyms_should_return_all_the_possible_synonyms_that_can_be_reached - 2017.05.15 at 20h 39m 01s.xml">
+      <configuration name="CruzCyclesTest.exploreSynonyms should return all the possible synonyms that can be reached" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest - 2017.05.13 at 20h 21m 47s.xml">
-      <configuration name="CruzCyclesTest" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_exploreSynonyms_should_return_all_the_possible_synonyms_that_can_be_reached - 2017.05.15 at 20h 40m 54s.xml">
+      <configuration name="CruzCyclesTest.exploreSynonyms should return all the possible synonyms that can be reached" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest - 2017.05.13 at 20h 22m 00s.xml">
-      <configuration name="CruzCyclesTest" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_exploreSynonyms_should_return_all_the_possible_synonyms_that_can_be_reached - 2017.05.15 at 20h 42m 48s.xml">
+      <configuration name="CruzCyclesTest.exploreSynonyms should return all the possible synonyms that can be reached" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest - 2017.05.13 at 20h 31m 21s.xml">
-      <configuration name="CruzCyclesTest" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_exploreSynonyms_should_return_all_the_possible_synonyms_that_can_be_reached - 2017.05.15 at 20h 44m 53s.xml">
+      <configuration name="CruzCyclesTest.exploreSynonyms should return all the possible synonyms that can be reached" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest - 2017.05.13 at 20h 31m 38s.xml">
-      <configuration name="CruzCyclesTest" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_exploreSynonyms_should_return_all_the_possible_synonyms_that_can_be_reached - 2017.05.15 at 20h 45m 57s.xml">
+      <configuration name="CruzCyclesTest.exploreSynonyms should return all the possible synonyms that can be reached" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest - 2017.05.13 at 20h 37m 12s.xml">
-      <configuration name="CruzCyclesTest" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_exploreSynonyms_should_return_all_the_possible_synonyms_that_can_be_reached - 2017.05.15 at 20h 46m 08s.xml">
+      <configuration name="CruzCyclesTest.exploreSynonyms should return all the possible synonyms that can be reached" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest - 2017.05.13 at 20h 57m 06s.xml">
-      <configuration name="CruzCyclesTest" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_exploreSynonyms_should_return_all_the_possible_synonyms_that_can_be_reached - 2017.05.15 at 20h 48m 47s.xml">
+      <configuration name="CruzCyclesTest.exploreSynonyms should return all the possible synonyms that can be reached" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -653,7 +649,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32950467" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32950467" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -689,6 +685,70 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/package.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reformat_thesaurus.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="56" lean-forward="false" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala-2.12/com/test/CruzCyclesTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" column="39" lean-forward="false" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/package.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reformat_thesaurus.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="56" lean-forward="false" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala-2.12/com/test/CruzCyclesTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="65" column="39" lean-forward="false" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/package.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -813,18 +873,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/worksheet.sc" />
     <entry file="file://$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/worksheet.sc" />
-    <entry file="file://$PROJECT_DIR$/src/test/scala-2.12/com/test/CruzCyclesTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="65" column="39" lean-forward="false" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -837,10 +889,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala-2.12/com/test/CruzCyclesTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="40" column="7" lean-forward="true" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/package.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        <state relative-caret-position="495">
+          <caret line="49" column="3" lean-forward="false" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
           <folding />
         </state>
       </provider>

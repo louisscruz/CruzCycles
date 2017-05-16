@@ -42,6 +42,12 @@ class CruzCyclesTest extends FunSpec {
     }
   }
 
+  describe("exploreSynonyms") {
+    it("should return all the possible synonyms that can be reached") {
+      assert(exploreSynonyms("glasses").size == 4)
+    }
+  }
+
   describe("findCruzCycle") {
     describe("when no cycle exists") {
       describe("when there is no antonym") {
