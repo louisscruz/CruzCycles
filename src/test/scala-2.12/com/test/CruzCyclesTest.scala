@@ -50,12 +50,13 @@ class CruzCyclesTest extends FunSpec {
 
   describe("nonSymmetricEntries") {
     it("should return all the nonSymmetricEntries") {
-      assert(nonSymmetricEntries().size == 8219)
+      val answer = nonSymmetricEntries() forall { el => !(antonymsFor(el._2) contains el._1) }
+      assert(answer)
     }
   }
 
   describe("connectedComponents") {
-    it ("shold return all the components") {
+    it ("should return all the components") {
       println(connectedComponents().size)
     }
   }

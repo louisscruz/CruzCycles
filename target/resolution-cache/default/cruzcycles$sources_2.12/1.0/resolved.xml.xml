@@ -4,7 +4,7 @@
 		module="cruzcycles$sources_2.12"
 		revision="1.0"
 		status="integration"
-		publication="20170504230428"
+		publication="20170519090038"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

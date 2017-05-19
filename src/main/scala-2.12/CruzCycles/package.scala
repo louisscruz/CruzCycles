@@ -53,13 +53,15 @@ package object CruzCycles {
 
   lazy val thesaurusList = thesaurus.map { case (k, v) => (k, v) } toList
 
-  def nonSymmetricEntries(): Set[String] = {
-    def nonSymmetricEntriesAcc(mappings: List[(String, AntonymSynonymTuple)], entries: Set[String]): Set[String] = mappings match {
+  def nonSymmetricEntries(): Set[(String, String)] = {
+    def nonSymmetricEntriesAcc(mappings: List[(String, AntonymSynonymTuple)], entries: Set[(String, String)]): Set[(String, String)] = mappings match {
       case Nil => entries
       case (word, (_, antonyms)) :: xs => {
-        val nonSymmetric = !(antonyms forall { antonym => synonymsFor(antonym) contains word })
+//        val nonSymmetric = !(antonyms forall { antonym => antonymsFor(antonym) contains word })
 
-        if (nonSymmetric) nonSymmetricEntriesAcc(xs, entries + word) else nonSymmetricEntriesAcc(xs, entries)
+        val nonSymmetric = (antonyms filter { antonym => !(antonymsFor(antonym) contains word) }) map { el => (word, el) }
+
+        if (nonSymmetric.size > 0) nonSymmetricEntriesAcc(xs, entries ++ nonSymmetric) else nonSymmetricEntriesAcc(xs, entries)
       }
     }
 
