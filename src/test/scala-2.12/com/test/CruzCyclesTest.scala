@@ -48,6 +48,18 @@ class CruzCyclesTest extends FunSpec {
     }
   }
 
+  describe("nonSymmetricEntries") {
+    it("should return all the nonSymmetricEntries") {
+      assert(nonSymmetricEntries().size == 8219)
+    }
+  }
+
+  describe("connectedComponents") {
+    it ("shold return all the components") {
+      println(connectedComponents().size)
+    }
+  }
+
   describe("findCruzCycle") {
     describe("when no cycle exists") {
       describe("when there is no antonym") {

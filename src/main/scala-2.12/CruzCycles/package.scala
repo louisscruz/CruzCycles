@@ -1,7 +1,8 @@
 import scala.io.Source
 
 package object CruzCycles {
-  type Thesaurus = Map[String, (Set[String], Set[String])]
+  type AntonymSynonymTuple = (Set[String], Set[String])
+  type Thesaurus = Map[String, AntonymSynonymTuple]
   type StringMapping = Map[String, String]
   type Cycle = List[String]
   type CycleList = List[Cycle]
@@ -38,15 +39,50 @@ package object CruzCycles {
       if (current.size < 1)
         visited
       else {
-        val nextWords = (for {
+        val nextWords = for {
           word <- current
-          nextWords <- (synonymsFor(word) -- visited)
-        } yield nextWords)
+          nextWords <- ((synonymsFor(word) -- visited) -- current)
+        } yield nextWords
+
         exploreSynonymsAcc(nextWords, visited ++ nextWords)
       }
     }
 
     exploreSynonymsAcc(Set(word), Set(word))
+  }
+
+  lazy val thesaurusList = thesaurus.map { case (k, v) => (k, v) } toList
+
+  def nonSymmetricEntries(): Set[String] = {
+    def nonSymmetricEntriesAcc(mappings: List[(String, AntonymSynonymTuple)], entries: Set[String]): Set[String] = mappings match {
+      case Nil => entries
+      case (word, (_, antonyms)) :: xs => {
+        val nonSymmetric = !(antonyms forall { antonym => synonymsFor(antonym) contains word })
+
+        if (nonSymmetric) nonSymmetricEntriesAcc(xs, entries + word) else nonSymmetricEntriesAcc(xs, entries)
+      }
+    }
+
+    nonSymmetricEntriesAcc(thesaurusList, Set())
+  }
+
+  def connectedComponents(): Set[Set[String]] = {
+    def connectedComponentsAcc(mappings: List[(String, AntonymSynonymTuple)], visited: Map[String, Set[String]]): Set[Set[String]] = mappings match {
+      case Nil => Set(Set("test"))
+      case (word, (_, _)) :: xs => {
+        val alreadyVisited = visited contains word
+
+        println(word)
+
+        if (alreadyVisited) {
+          connectedComponentsAcc(xs, visited)
+        } else {
+          connectedComponentsAcc(xs, visited)
+        }
+      }
+    }
+
+    connectedComponentsAcc(thesaurusList, Map())
   }
 
   def findCruzCycle(source: String): Cycle = {
