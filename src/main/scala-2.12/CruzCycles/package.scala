@@ -1,8 +1,8 @@
 import scala.io.Source
 
 package object CruzCycles {
-  type AntonymSynonymTuple = (Set[String], Set[String])
-  type Thesaurus = Map[String, AntonymSynonymTuple]
+  type SynonymAntonymTuple = (Set[String], Set[String])
+  type Thesaurus = Map[String, SynonymAntonymTuple]
   type StringMapping = Map[String, String]
   type Cycle = List[String]
   type CycleList = List[Cycle]
@@ -51,41 +51,91 @@ package object CruzCycles {
     exploreSynonymsAcc(Set(word), Set(word))
   }
 
+  lazy val transposedThesaurus: Map[String, Set[String]] = {
+    thesaurus.foldLeft(Map[String, Set[String]]()) { case (acc, (word, (synonyms, _))) =>
+      synonyms.foldLeft(acc) { case (r, synonym) => acc + (synonym -> (r.getOrElse(synonym, Set()) + word)) }
+    }
+    Map() ++ thesaurus.map(_.swap)
+//    thesaurus.values.toSet.flatten.map((v, _) => (v, thesaurus.keys.filter(thesaurus(_) contains v))).toMap
+  }
+
   lazy val thesaurusList = thesaurus.map { case (k, v) => (k, v) } toList
 
-  def nonSymmetricEntries(): Set[(String, String)] = {
-    def nonSymmetricEntriesAcc(mappings: List[(String, AntonymSynonymTuple)], entries: Set[(String, String)]): Set[(String, String)] = mappings match {
+  def nonSymmetricSynonymEntries(): Set[(String, String)] = {
+    def nonSymmetricSynonymEntriesAcc(mappings: List[(String, SynonymAntonymTuple)], entries: Set[(String, String)]): Set[(String, String)] = mappings match {
+      case Nil => entries
+      case (word, (synonyms, _)) :: xs => {
+        val nonSymmetric = synonyms filter {
+          synonym => !(synonymsFor(synonym) contains word)
+        } map { el => (word, el) }
+
+        if (nonSymmetric.size > 0) nonSymmetricSynonymEntriesAcc(xs, entries ++ nonSymmetric) else nonSymmetricSynonymEntriesAcc(xs, entries)
+      }
+    }
+
+    nonSymmetricSynonymEntriesAcc(thesaurusList, Set())
+  }
+
+  def nonSymmetricAntonymEntries(): Set[(String, String)] = {
+    def nonSymmetricAntonymEntriesAcc(mappings: List[(String, SynonymAntonymTuple)], entries: Set[(String, String)]): Set[(String, String)] = mappings match {
       case Nil => entries
       case (word, (_, antonyms)) :: xs => {
-//        val nonSymmetric = !(antonyms forall { antonym => antonymsFor(antonym) contains word })
-
         val nonSymmetric = (antonyms filter { antonym => !(antonymsFor(antonym) contains word) }) map { el => (word, el) }
 
-        if (nonSymmetric.size > 0) nonSymmetricEntriesAcc(xs, entries ++ nonSymmetric) else nonSymmetricEntriesAcc(xs, entries)
+        if (nonSymmetric.size > 0) nonSymmetricAntonymEntriesAcc(xs, entries ++ nonSymmetric) else nonSymmetricAntonymEntriesAcc(xs, entries)
       }
     }
 
-    nonSymmetricEntriesAcc(thesaurusList, Set())
+    nonSymmetricAntonymEntriesAcc(thesaurusList, Set())
   }
 
-  def connectedComponents(): Set[Set[String]] = {
-    def connectedComponentsAcc(mappings: List[(String, AntonymSynonymTuple)], visited: Map[String, Set[String]]): Set[Set[String]] = mappings match {
-      case Nil => Set(Set("test"))
-      case (word, (_, _)) :: xs => {
-        val alreadyVisited = visited contains word
+//  def connectedComponents(): Set[Set[String]] = {
+//    def connectedComponentsAcc(mappings: List[(String, SynonymAntonymTuple)], visited: Map[String, Int], components: Map[Int, Set[String]]): Set[Set[String]] = mappings match {
+//      case Nil => {
+//        println(components.size)
+//        components map { case (_, v) => v } toSet
+//      }
+//      case (word, (synonyms, _)) :: xs => {
+//        val componentIndex = visited getOrElse(word, components.size)
+//
+//        if (componentIndex == components.size) {
+//          // Do this if the word has not been visited
+//          val newVisited = visited + (word -> componentIndex) ++ (synonyms map { el => (el, componentIndex) } toMap)
+//          val newComponents = components + (componentIndex -> (Set(word) ++ synonyms))
+//          connectedComponentsAcc(xs, newVisited, newComponents)
+//        } else {
+//          // Do this if already visited
+//          val newVisited = visited ++ (synonyms map { el => (el, componentIndex) } toMap)
+//          val newComponents = components + (componentIndex -> ((components(componentIndex) + word) ++ synonyms))
+//          connectedComponentsAcc(xs, newVisited, newComponents)
+//        }
+//      }
+//    }
+//
+//    connectedComponentsAcc(thesaurusList, Map(), Map())
+//  }
 
-        println(word)
+//  def connectedComponents(): List[Set[String]] = {
+//    def firstPass(): List[String] = {
+//      def firstPassAcc(acc: List[String]) = {
+//
+//      }
+//
+//      firstPassAcc(List())
+//    }
+//
+//    def secondPass(stack: List[String]): List[Set[String]] = {
+//      def secondPassAcc(stack: List[String], acc: List[Set[String]]) = {
+//
+//      }
+//
+//      secondPassAcc(stack, List())
+//    }
+//
+//    secondPass(firstPass())
+//  }
 
-        if (alreadyVisited) {
-          connectedComponentsAcc(xs, visited)
-        } else {
-          connectedComponentsAcc(xs, visited)
-        }
-      }
-    }
-
-    connectedComponentsAcc(thesaurusList, Map())
-  }
+//  def maxConnectedComponent(): Set[String] = connectedComponents().reduceLeft((a, b) => if (a.size > b.size) a else b)
 
   def findCruzCycle(source: String): Cycle = {
     val (synonyms, antonyms) = thesaurus(source)
