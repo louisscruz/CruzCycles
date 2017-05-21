@@ -53,10 +53,8 @@ package object CruzCycles {
 
   lazy val transposedThesaurus: Map[String, Set[String]] = {
     thesaurus.foldLeft(Map[String, Set[String]]()) { case (acc, (word, (synonyms, _))) =>
-      synonyms.foldLeft(acc) { case (r, synonym) => acc + (synonym -> (r.getOrElse(synonym, Set()) + word)) }
+      synonyms.foldLeft(acc) { case (acc, synonym) => acc + (synonym -> (acc.getOrElse(synonym, Set()) + word)) }
     }
-    Map() ++ thesaurus.map(_.swap)
-//    thesaurus.values.toSet.flatten.map((v, _) => (v, thesaurus.keys.filter(thesaurus(_) contains v))).toMap
   }
 
   lazy val thesaurusList = thesaurus.map { case (k, v) => (k, v) } toList
@@ -89,51 +87,41 @@ package object CruzCycles {
     nonSymmetricAntonymEntriesAcc(thesaurusList, Set())
   }
 
-//  def connectedComponents(): Set[Set[String]] = {
-//    def connectedComponentsAcc(mappings: List[(String, SynonymAntonymTuple)], visited: Map[String, Int], components: Map[Int, Set[String]]): Set[Set[String]] = mappings match {
-//      case Nil => {
-//        println(components.size)
-//        components map { case (_, v) => v } toSet
-//      }
-//      case (word, (synonyms, _)) :: xs => {
-//        val componentIndex = visited getOrElse(word, components.size)
-//
-//        if (componentIndex == components.size) {
-//          // Do this if the word has not been visited
-//          val newVisited = visited + (word -> componentIndex) ++ (synonyms map { el => (el, componentIndex) } toMap)
-//          val newComponents = components + (componentIndex -> (Set(word) ++ synonyms))
-//          connectedComponentsAcc(xs, newVisited, newComponents)
-//        } else {
-//          // Do this if already visited
-//          val newVisited = visited ++ (synonyms map { el => (el, componentIndex) } toMap)
-//          val newComponents = components + (componentIndex -> ((components(componentIndex) + word) ++ synonyms))
-//          connectedComponentsAcc(xs, newVisited, newComponents)
-//        }
-//      }
-//    }
-//
-//    connectedComponentsAcc(thesaurusList, Map(), Map())
-//  }
+  def exploreSynonymsDepthFirst(siblings: Set[String]): List[String] = {
+    def exploreDepthFirstAcc(siblings: Set[String], acc: Set[String]): Set[String] = {
 
-//  def connectedComponents(): List[Set[String]] = {
-//    def firstPass(): List[String] = {
-//      def firstPassAcc(acc: List[String]) = {
-//
-//      }
-//
-//      firstPassAcc(List())
-//    }
-//
-//    def secondPass(stack: List[String]): List[Set[String]] = {
-//      def secondPassAcc(stack: List[String], acc: List[Set[String]]) = {
-//
-//      }
-//
-//      secondPassAcc(stack, List())
-//    }
-//
-//    secondPass(firstPass())
-//  }
+    }
+
+    exploreDepthFirstAcc(siblings, Set())
+  }
+
+  def connectedComponents(): List[Set[String]] = {
+    def firstPass(): List[String] = {
+      def firstPassAcc(acc: List[String]) = {
+
+      }
+
+      firstPassAcc(List())
+    }
+
+    def secondPass(stack: List[String]): List[Set[String]] = {
+      def secondPassAcc(stack: List[String], acc: List[Set[String]], visited: Set[String]): List[Set[String]] = stack match {
+        case Nil => acc
+        case x :: xs => visited.contains(x) match {
+          case true => secondPassAcc(xs, acc, visited)
+          case false => {
+
+            val explored = exploreSynonymsDepthFirst(Set(x))
+            secondPassAcc(xs, explored.toSet :: acc, visited ++ explored)
+          }
+        }
+      }
+
+      secondPassAcc(stack, List(), Set())
+    }
+
+    secondPass(firstPass())
+  }
 
 //  def maxConnectedComponent(): Set[String] = connectedComponents().reduceLeft((a, b) => if (a.size > b.size) a else b)
 

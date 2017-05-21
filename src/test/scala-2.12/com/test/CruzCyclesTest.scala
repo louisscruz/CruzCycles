@@ -49,25 +49,9 @@ class CruzCyclesTest extends FunSpec {
   }
 
   describe("transposedThesaurus") {
-    it("should be the proper length") {
-      val properSize = thesaurus.values.foldLeft(0)((acc, el) => acc + el._1.size)
-      println(properSize)
-//      println(transposedThesaurus.values)
-      println(transposedThesaurus.size)
-//      println(transposedThesaurus)
-//      assert(transposedThesaurus.size == thesaurus.size)
-    }
-
     it("should return the correct edge relationships") {
-//      val answer = transposedThesaurus forall (el => el._2 forall (a => thesaurus contains a))
-//      val answer = thesaurus forall (el => el._2._1 forall (a => transposedThesaurus contains a))
-      thesaurus foreach (el => el._2._1 foreach (a => {
-        println(a)
-        println(transposedThesaurus contains a)
-      }))
-      println(transposedThesaurus("domesticate"))
-//      assert(answer)
-//      println(transposedThesaurus)
+      val answer = thesaurus forall (el => el._2._1 forall (a => transposedThesaurus contains a))
+      assert(answer)
     }
   }
 
