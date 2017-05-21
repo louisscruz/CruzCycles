@@ -51,9 +51,11 @@ package object CruzCycles {
     exploreSynonymsAcc(Set(word), Set(word))
   }
 
-  lazy val transposedThesaurus: Map[String, Set[String]] = {
-    thesaurus.foldLeft(Map[String, Set[String]]()) { case (acc, (word, (synonyms, _))) =>
-      synonyms.foldLeft(acc) { case (acc, synonym) => acc + (synonym -> (acc.getOrElse(synonym, Set()) + word)) }
+  lazy val transposedThesaurus: Thesaurus = {
+    thesaurus.foldLeft(Map[String, (Set[String], Set[String])]()) { case (acc, (word, (synonyms, _))) =>
+      synonyms.foldLeft(acc) {
+        case (acc, synonym) => acc + (synonym -> (((acc.getOrElse(synonym, (Set[String](), Set[String]()))._1 + word), Set[String]())))
+      }
     }
   }
 
@@ -87,41 +89,41 @@ package object CruzCycles {
     nonSymmetricAntonymEntriesAcc(thesaurusList, Set())
   }
 
-  def exploreSynonymsDepthFirst(siblings: Set[String]): List[String] = {
-    def exploreDepthFirstAcc(siblings: Set[String], acc: Set[String]): Set[String] = {
-
-    }
-
-    exploreDepthFirstAcc(siblings, Set())
-  }
-
-  def connectedComponents(): List[Set[String]] = {
-    def firstPass(): List[String] = {
-      def firstPassAcc(acc: List[String]) = {
-
-      }
-
-      firstPassAcc(List())
-    }
-
-    def secondPass(stack: List[String]): List[Set[String]] = {
-      def secondPassAcc(stack: List[String], acc: List[Set[String]], visited: Set[String]): List[Set[String]] = stack match {
-        case Nil => acc
-        case x :: xs => visited.contains(x) match {
-          case true => secondPassAcc(xs, acc, visited)
-          case false => {
-
-            val explored = exploreSynonymsDepthFirst(Set(x))
-            secondPassAcc(xs, explored.toSet :: acc, visited ++ explored)
-          }
-        }
-      }
-
-      secondPassAcc(stack, List(), Set())
-    }
-
-    secondPass(firstPass())
-  }
+//  def exploreSynonymsDepthFirst(siblings: Set[String]): List[String] = {
+//    def exploreDepthFirstAcc(siblings: Set[String], acc: Set[String]): Set[String] = {
+//
+//    }
+//
+//    exploreDepthFirstAcc(siblings, Set())
+//  }
+//
+//  def connectedComponents(): List[Set[String]] = {
+//    def firstPass(): List[String] = {
+//      def firstPassAcc(acc: List[String]) = {
+//
+//      }
+//
+//      firstPassAcc(List())
+//    }
+//
+//    def secondPass(stack: List[String]): List[Set[String]] = {
+//      def secondPassAcc(stack: List[String], acc: List[Set[String]], visited: Set[String]): List[Set[String]] = stack match {
+//        case Nil => acc
+//        case x :: xs => visited.contains(x) match {
+//          case true => secondPassAcc(xs, acc, visited)
+//          case false => {
+//
+//            val explored = exploreSynonymsDepthFirst(Set(x))
+//            secondPassAcc(xs, explored.toSet :: acc, visited ++ explored)
+//          }
+//        }
+//      }
+//
+//      secondPassAcc(stack, List(), Set())
+//    }
+//
+//    secondPass(firstPass())
+//  }
 
 //  def maxConnectedComponent(): Set[String] = connectedComponents().reduceLeft((a, b) => if (a.size > b.size) a else b)
 
