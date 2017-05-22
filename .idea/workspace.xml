@@ -29,8 +29,8 @@
       <file leaf-file-name="package.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/package.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="111" column="2" lean-forward="true" selection-start-line="111" selection-start-column="2" selection-end-line="111" selection-end-column="2" />
+            <state relative-caret-position="253">
+              <caret line="150" column="22" lean-forward="false" selection-start-line="150" selection-start-column="22" selection-end-line="150" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -39,8 +39,8 @@
       <file leaf-file-name="CruzCyclesTest.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala-2.12/com/test/CruzCyclesTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="107" column="63" lean-forward="true" selection-start-line="107" selection-start-column="63" selection-end-line="107" selection-end-column="63" />
+            <state relative-caret-position="429">
+              <caret line="148" column="31" lean-forward="true" selection-start-line="148" selection-start-column="31" selection-end-line="148" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -157,8 +157,8 @@
   <component name="PropertiesComponent">
     <property name="FullScreen" value="true" />
   </component>
-  <component name="RunManager" selected="ScalaTest.CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff">
-    <configuration default="false" name="CruzCyclesTest.transposedThesaurus should be the proper length" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+  <component name="RunManager" selected="ScalaTest.CruzCyclesTest.maxConnectedComponent should do something">
+    <configuration default="false" name="CruzCyclesTest.exploreSynonymsDepthFirst when the inversion boolean is not given should return all stuff&#10;exploreSynonymsDepthFirst when the inversion boolean is set to false should return all stuff&#10;exploreSynonymsDepthFirst when the inversion boolean is set to true should return all stuff" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="cruzcycles" />
       <setting name="path" value="com.test.CruzCyclesTest" />
@@ -167,7 +167,7 @@
       <setting name="params" value="" />
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
       <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="transposedThesaurus should be the proper length" />
+      <setting name="testName" value="exploreSynonymsDepthFirst when the inversion boolean is not given should return all stuff&#10;exploreSynonymsDepthFirst when the inversion boolean is set to false should return all stuff&#10;exploreSynonymsDepthFirst when the inversion boolean is set to true should return all stuff" />
       <setting name="testKind" value="Test name" />
       <setting name="showProgressMessages" value="true" />
       <classRegexps />
@@ -175,7 +175,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="CruzCyclesTest.transposedThesaurus should be the proper length&#10;transposedThesaurus should return the correct edge relationships" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+    <configuration default="false" name="CruzCyclesTest.connectedComponents should return all the components" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="cruzcycles" />
       <setting name="path" value="com.test.CruzCyclesTest" />
@@ -184,7 +184,7 @@
       <setting name="params" value="" />
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
       <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="transposedThesaurus should be the proper length&#10;transposedThesaurus should return the correct edge relationships" />
+      <setting name="testName" value="connectedComponents should return all the components" />
       <setting name="testKind" value="Test name" />
       <setting name="showProgressMessages" value="true" />
       <classRegexps />
@@ -192,7 +192,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="CruzCyclesTest.transposedThesaurus should return the correct edge relationships" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+    <configuration default="false" name="CruzCyclesTest.exploreSynonymsDepthFirst when the inversion boolean is set to true should return all stuff" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="cruzcycles" />
       <setting name="path" value="com.test.CruzCyclesTest" />
@@ -201,7 +201,7 @@
       <setting name="params" value="" />
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
       <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="transposedThesaurus should return the correct edge relationships" />
+      <setting name="testName" value="exploreSynonymsDepthFirst when the inversion boolean is set to true should return all stuff" />
       <setting name="testKind" value="Test name" />
       <setting name="showProgressMessages" value="true" />
       <classRegexps />
@@ -209,7 +209,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="CruzCyclesTest.synonymsFor when the word does not exist when the inversion boolean is not given should produce the correct number of synonyms&#10;synonymsFor when the word does not exist when the inversion boolean is set to false should produce the correct number of synonyms&#10;synonymsFor when the word does not exist when the inversion boolean is set to true should produce the correct number of synonyms&#10;synonymsFor when the word exists when the inversion boolean is not given should produce the correct number of synonyms&#10;synonymsFor when the word exists when the inversion boolean is set to false should produce the correct number of synonyms&#10;synonymsFor when the word exists when the inversion boolean is set to true should produce the correct number of synonyms" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+    <configuration default="false" name="CruzCyclesTest.maxConnectedComponent should return the largest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="cruzcycles" />
       <setting name="path" value="com.test.CruzCyclesTest" />
@@ -218,7 +218,7 @@
       <setting name="params" value="" />
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
       <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="synonymsFor when the word does not exist when the inversion boolean is not given should produce the correct number of synonyms&#10;synonymsFor when the word does not exist when the inversion boolean is set to false should produce the correct number of synonyms&#10;synonymsFor when the word does not exist when the inversion boolean is set to true should produce the correct number of synonyms&#10;synonymsFor when the word exists when the inversion boolean is not given should produce the correct number of synonyms&#10;synonymsFor when the word exists when the inversion boolean is set to false should produce the correct number of synonyms&#10;synonymsFor when the word exists when the inversion boolean is set to true should produce the correct number of synonyms" />
+      <setting name="testName" value="maxConnectedComponent should return the largest" />
       <setting name="testKind" value="Test name" />
       <setting name="showProgressMessages" value="true" />
       <classRegexps />
@@ -226,7 +226,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+    <configuration default="false" name="CruzCyclesTest.maxConnectedComponent should do something" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="cruzcycles" />
       <setting name="path" value="com.test.CruzCyclesTest" />
@@ -235,7 +235,7 @@
       <setting name="params" value="" />
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
       <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="exploreSynonymsDepthFirst should return all stuff" />
+      <setting name="testName" value="maxConnectedComponent should do something" />
       <setting name="testKind" value="Test name" />
       <setting name="showProgressMessages" value="true" />
       <classRegexps />
@@ -499,19 +499,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.transposedThesaurus should be the proper length" />
-      <item index="1" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.transposedThesaurus should be the proper length&#10;transposedThesaurus should return the correct edge relationships" />
-      <item index="2" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.transposedThesaurus should return the correct edge relationships" />
-      <item index="3" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.synonymsFor when the word does not exist when the inversion boolean is not given should produce the correct number of synonyms&#10;synonymsFor when the word does not exist when the inversion boolean is set to false should produce the correct number of synonyms&#10;synonymsFor when the word does not exist when the inversion boolean is set to true should produce the correct number of synonyms&#10;synonymsFor when the word exists when the inversion boolean is not given should produce the correct number of synonyms&#10;synonymsFor when the word exists when the inversion boolean is set to false should produce the correct number of synonyms&#10;synonymsFor when the word exists when the inversion boolean is set to true should produce the correct number of synonyms" />
-      <item index="4" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" />
+      <item index="0" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.exploreSynonymsDepthFirst when the inversion boolean is not given should return all stuff&#10;exploreSynonymsDepthFirst when the inversion boolean is set to false should return all stuff&#10;exploreSynonymsDepthFirst when the inversion boolean is set to true should return all stuff" />
+      <item index="1" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.connectedComponents should return all the components" />
+      <item index="2" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.exploreSynonymsDepthFirst when the inversion boolean is set to true should return all stuff" />
+      <item index="3" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.maxConnectedComponent should return the largest" />
+      <item index="4" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.maxConnectedComponent should do something" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" />
-        <item index="1" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.synonymsFor when the word does not exist when the inversion boolean is not given should produce the correct number of synonyms&#10;synonymsFor when the word does not exist when the inversion boolean is set to false should produce the correct number of synonyms&#10;synonymsFor when the word does not exist when the inversion boolean is set to true should produce the correct number of synonyms&#10;synonymsFor when the word exists when the inversion boolean is not given should produce the correct number of synonyms&#10;synonymsFor when the word exists when the inversion boolean is set to false should produce the correct number of synonyms&#10;synonymsFor when the word exists when the inversion boolean is set to true should produce the correct number of synonyms" />
-        <item index="2" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.transposedThesaurus should return the correct edge relationships" />
-        <item index="3" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.transposedThesaurus should be the proper length&#10;transposedThesaurus should return the correct edge relationships" />
-        <item index="4" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.transposedThesaurus should be the proper length" />
+        <item index="0" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.maxConnectedComponent should do something" />
+        <item index="1" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.maxConnectedComponent should return the largest" />
+        <item index="2" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.connectedComponents should return all the components" />
+        <item index="3" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.exploreSynonymsDepthFirst when the inversion boolean is set to true should return all stuff" />
+        <item index="4" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.exploreSynonymsDepthFirst when the inversion boolean is not given should return all stuff&#10;exploreSynonymsDepthFirst when the inversion boolean is set to false should return all stuff&#10;exploreSynonymsDepthFirst when the inversion boolean is set to true should return all stuff" />
       </list>
     </recent_temporary>
   </component>
@@ -565,35 +565,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CruzCyclesTest_exploreSynonymsDepthFirst_should_return_all_stuff - 2017.05.21 at 15h 55m 49s.xml">
-      <configuration name="CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_connectedComponents_should_return_all_the_components - 2017.05.21 at 22h 25m 27s.xml">
+      <configuration name="CruzCyclesTest.connectedComponents should return all the components" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_exploreSynonymsDepthFirst_should_return_all_stuff - 2017.05.21 at 15h 55m 59s.xml">
-      <configuration name="CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_maxConnectedComponent_should_do_something - 2017.05.21 at 22h 34m 38s.xml">
+      <configuration name="CruzCyclesTest.maxConnectedComponent should do something" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_exploreSynonymsDepthFirst_should_return_all_stuff - 2017.05.21 at 15h 56m 12s.xml">
-      <configuration name="CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_maxConnectedComponent_should_do_something - 2017.05.21 at 23h 09m 11s.xml">
+      <configuration name="CruzCyclesTest.maxConnectedComponent should do something" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_exploreSynonymsDepthFirst_should_return_all_stuff - 2017.05.21 at 15h 56m 21s.xml">
-      <configuration name="CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_maxConnectedComponent_should_do_something - 2017.05.21 at 23h 09m 53s.xml">
+      <configuration name="CruzCyclesTest.maxConnectedComponent should do something" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_exploreSynonymsDepthFirst_should_return_all_stuff - 2017.05.21 at 15h 56m 32s.xml">
-      <configuration name="CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_maxConnectedComponent_should_do_something - 2017.05.21 at 23h 10m 12s.xml">
+      <configuration name="CruzCyclesTest.maxConnectedComponent should do something" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_exploreSynonymsDepthFirst_should_return_all_stuff - 2017.05.21 at 17h 05m 31s.xml">
-      <configuration name="CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_maxConnectedComponent_should_do_something - 2017.05.21 at 23h 10m 44s.xml">
+      <configuration name="CruzCyclesTest.maxConnectedComponent should do something" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_exploreSynonymsDepthFirst_should_return_all_stuff - 2017.05.21 at 17h 06m 49s.xml">
-      <configuration name="CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_maxConnectedComponent_should_do_something - 2017.05.21 at 23h 12m 12s.xml">
+      <configuration name="CruzCyclesTest.maxConnectedComponent should do something" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_exploreSynonymsDepthFirst_should_return_all_stuff - 2017.05.21 at 17h 12m 01s.xml">
-      <configuration name="CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_maxConnectedComponent_should_do_something - 2017.05.21 at 23h 15m 05s.xml">
+      <configuration name="CruzCyclesTest.maxConnectedComponent should do something" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_exploreSynonymsDepthFirst_should_return_all_stuff - 2017.05.21 at 17h 28m 16s.xml">
-      <configuration name="CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_maxConnectedComponent_should_do_something - 2017.05.21 at 23h 15m 22s.xml">
+      <configuration name="CruzCyclesTest.maxConnectedComponent should do something" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_exploreSynonymsDepthFirst_should_return_all_stuff - 2017.05.21 at 17h 35m 18s.xml">
-      <configuration name="CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_maxConnectedComponent_should_return_the_largest - 2017.05.21 at 22h 28m 59s.xml">
+      <configuration name="CruzCyclesTest.maxConnectedComponent should return the largest" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -610,7 +610,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287868" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287868" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -694,16 +694,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala-2.12/com/test/CruzCyclesTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="107" column="63" lean-forward="true" selection-start-line="107" selection-start-column="63" selection-end-line="107" selection-end-column="63" />
+        <state relative-caret-position="429">
+          <caret line="148" column="31" lean-forward="true" selection-start-line="148" selection-start-column="31" selection-end-line="148" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/package.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="111" column="2" lean-forward="true" selection-start-line="111" selection-start-column="2" selection-end-line="111" selection-end-column="2" />
+        <state relative-caret-position="253">
+          <caret line="150" column="22" lean-forward="false" selection-start-line="150" selection-start-column="22" selection-end-line="150" selection-end-column="22" />
           <folding />
         </state>
       </provider>

@@ -90,51 +90,69 @@ package object CruzCycles {
     nonSymmetricAntonymEntriesAcc(thesaurusList, Set())
   }
 
-  def exploreSynonymsDepthFirst(start: String): (List[String], Set[String]) = {
-    def childrenNotVisited(parent: String, visited: Set[String]) = synonymsFor(parent) filterNot visited.contains
+  def exploreSynonymsDepthFirst(start: String, invert: Boolean = false, visited: Set[String] = Set()): (List[String], Set[String]) = {
+    def childrenNotVisited(parent: String, visited: Set[String]): List[String] = synonymsFor(parent, invert) filterNot { visited.contains } toList
 
-    def exploreSynonymsDepthFirstAcc(stack: Set[String], visited: Set[String]): Set[String] = stack.isEmpty match {
-      case true => visited
-      case false => {
-        val nextStack = childrenNotVisited(stack.head, visited) ++ stack.tail
-        exploreSynonymsDepthFirstAcc(nextStack, visited + stack.head)
+    def exploreSynonymsDepthFirstAcc(stack: List[String], acc: Set[String], visited: Set[String]): Set[String] = stack match {
+      case Nil => acc
+      case x :: xs => {
+        val nextStack = childrenNotVisited(x, visited) ::: xs
+        exploreSynonymsDepthFirstAcc(nextStack, acc + x, visited + x)
       }
     }
 
-    val response = exploreSynonymsDepthFirstAcc(Set(start), Set())
+    val response = exploreSynonymsDepthFirstAcc(List(start), Set(start), visited)
 
     (response.toList, response)
   }
 
-//  def connectedComponents(): List[Set[String]] = {
-//    def firstPass(): List[String] = {
-//      def firstPassAcc(acc: List[String]) = {
-//
-//      }
-//
-//      firstPassAcc(List())
-//    }
-//
-//    def secondPass(stack: List[String]): List[Set[String]] = {
-//      def secondPassAcc(stack: List[String], acc: List[Set[String]], visited: Set[String]): List[Set[String]] = stack match {
-//        case Nil => acc
-//        case x :: xs => visited.contains(x) match {
-//          case true => secondPassAcc(xs, acc, visited)
-//          case false => {
-//
-//            val explored = exploreSynonymsDepthFirst(stack.head)
-//            secondPassAcc(xs, explored._2 :: acc, visited ++ explored._2)
-//          }
-//        }
-//      }
-//
-//      secondPassAcc(stack, List(), Set())
-//    }
-//
-//    secondPass(firstPass())
-//  }
+  def connectedComponents(): List[Set[String]] = {
+    def firstPass(): List[String] = {
+      def firstPassAcc(stack: List[String], acc: List[String], visited: Set[String]): List[String] = stack match {
+        case Nil => acc
+        case x :: xs => visited.contains(x) match {
+          case true => firstPassAcc(xs, acc, visited)
+          case false => {
+            val explored = exploreSynonymsDepthFirst(x, false, visited)
+            firstPassAcc(xs, explored._1 ::: acc, visited ++ explored._2)
+          }
+        }
+      }
 
-//  def maxConnectedComponent(): Set[String] = connectedComponents().reduceLeft((a, b) => if (a.size > b.size) a else b)
+      val stack = thesaurus.keys.toList
+
+      firstPassAcc(stack, List(), Set())
+    }
+
+    def secondPass(stack: List[String]): List[Set[String]] = {
+      def secondPassAcc(stack: List[String], acc: List[Set[String]], visited: Set[String]): List[Set[String]] = stack match {
+        case Nil => acc
+        case x :: xs => visited.contains(x) match {
+          case true => secondPassAcc(xs, acc, visited)
+          case false => {
+            val explored = exploreSynonymsDepthFirst(x, true, visited)
+            secondPassAcc(xs, explored._2 :: acc, visited ++ explored._2)
+          }
+        }
+      }
+
+      secondPassAcc(stack, List(), Set())
+    }
+
+    val first = firstPass()
+    secondPass(first)
+  }
+
+  def maxConnectedComponent(): Set[String] = connectedComponents().reduceLeft((a, b) => if (a.size > b.size) a else b)
+
+  def meanConnectedComponentSize(): Double = {
+    def accumulator(i: Int, total: Int, components: List[Set[String]]): Double = components match {
+      case Nil => total.toDouble / i
+      case x :: xs => accumulator(i + 1, total + x.size, xs)
+    }
+
+    accumulator(0, 0, connectedComponents())
+  }
 
   def findCruzCycle(source: String): Cycle = {
     val (synonyms, antonyms) = thesaurus(source)

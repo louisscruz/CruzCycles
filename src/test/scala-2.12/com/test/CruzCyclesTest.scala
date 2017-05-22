@@ -112,20 +112,44 @@ class CruzCyclesTest extends FunSpec {
   }
 
   describe("exploreSynonymsDepthFirst") {
-    it("should return all stuff") {
-      println(exploreSynonymsDepthFirst("fast")._1.size)
+    describe("when the inversion boolean is not given") {
+      it("should return all stuff") {
+        assert(exploreSynonymsDepthFirst("glasses")._1 == List("glasses", "spectacles", "specs", "eyeglasses"))
+      }
+    }
+
+    describe("when the inversion boolean is set to false") {
+      it("should return all stuff") {
+        assert(exploreSynonymsDepthFirst("glasses", false)._1 == List("glasses", "spectacles", "specs", "eyeglasses"))
+      }
+    }
+
+    describe("when the inversion boolean is set to true") {
+      it("should return all stuff") {
+        assert(exploreSynonymsDepthFirst("canarese", true)._1 == List("glasses", "eyeglasses", "spectacles", "specs"))
+      }
     }
   }
 
   describe("connectedComponents") {
+    // In need of a quick way to properly test this
     it ("should return all the components") {
-//      val c = connectedComponents()
-//      println(thesaurus.size)
-//      println(c)
-//      println(c.size)
-//      val c = maxConnectedComponent()
-//      println(c)
-//      println(c.size)
+      val components = connectedComponents()
+      assert(components.size < thesaurus.size)
+    }
+  }
+
+  describe("maxConnectedComponent") {
+    it("should return the largest") {
+      val component = maxConnectedComponent()
+      println(component.size)
+      assert(connectedComponents() forall (el => el.size <= component.size))
+    }
+
+    it("should do something") {
+      println(meanConnectedComponentSize())
+//      val c = connectedComponents().sortWith(_.size > _.size)
+//      c foreach (el => println(el.size))
     }
   }
 
