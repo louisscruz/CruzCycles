@@ -126,7 +126,7 @@ class CruzCyclesTest extends FunSpec {
 
     describe("when the inversion boolean is set to true") {
       it("should return all stuff") {
-        assert(exploreSynonymsDepthFirst("canarese", true)._1 == List("glasses", "eyeglasses", "spectacles", "specs"))
+        assert(exploreSynonymsDepthFirst("glasses", true)._1 == List("glasses", "eyeglasses", "spectacles", "specs"))
       }
     }
   }
@@ -142,14 +142,7 @@ class CruzCyclesTest extends FunSpec {
   describe("maxConnectedComponent") {
     it("should return the largest") {
       val component = maxConnectedComponent()
-      println(component.size)
       assert(connectedComponents() forall (el => el.size <= component.size))
-    }
-
-    it("should do something") {
-      println(meanConnectedComponentSize())
-//      val c = connectedComponents().sortWith(_.size > _.size)
-//      c foreach (el => println(el.size))
     }
   }
 
