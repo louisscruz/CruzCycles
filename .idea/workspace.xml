@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a2ce1ae6-8aba-4c92-8805-9da015df25c0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/package.scala" afterPath="$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/package.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala-2.12/com/test/CruzCyclesTest.scala" afterPath="$PROJECT_DIR$/src/test/scala-2.12/com/test/CruzCyclesTest.scala" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -28,8 +29,8 @@
       <file leaf-file-name="package.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/package.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="279">
+              <caret line="111" column="2" lean-forward="true" selection-start-line="111" selection-start-column="2" selection-end-line="111" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -38,8 +39,8 @@
       <file leaf-file-name="CruzCyclesTest.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala-2.12/com/test/CruzCyclesTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="50" column="35" lean-forward="true" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+            <state relative-caret-position="508">
+              <caret line="107" column="63" lean-forward="true" selection-start-line="107" selection-start-column="63" selection-end-line="107" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -156,41 +157,7 @@
   <component name="PropertiesComponent">
     <property name="FullScreen" value="true" />
   </component>
-  <component name="RunManager" selected="ScalaTest.CruzCyclesTest.transposedThesaurus should return the correct edge relationships">
-    <configuration default="false" name="CruzCyclesTest.nonSymmetricSynonymEntries should return all the non-symmetric synonym entries" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="cruzcycles" />
-      <setting name="path" value="com.test.CruzCyclesTest" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="nonSymmetricSynonymEntries should return all the non-symmetric synonym entries" />
-      <setting name="testKind" value="Test name" />
-      <setting name="showProgressMessages" value="true" />
-      <classRegexps />
-      <testRegexps />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="CruzCyclesTest.nonSymmetricAntonymEntries should return all the non-symmetric antonym entries" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="cruzcycles" />
-      <setting name="path" value="com.test.CruzCyclesTest" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="nonSymmetricAntonymEntries should return all the non-symmetric antonym entries" />
-      <setting name="testKind" value="Test name" />
-      <setting name="showProgressMessages" value="true" />
-      <classRegexps />
-      <testRegexps />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="ScalaTest.CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff">
     <configuration default="false" name="CruzCyclesTest.transposedThesaurus should be the proper length" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="cruzcycles" />
@@ -235,6 +202,40 @@
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
       <setting name="searchForTest" value="Across module dependencies" />
       <setting name="testName" value="transposedThesaurus should return the correct edge relationships" />
+      <setting name="testKind" value="Test name" />
+      <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="CruzCyclesTest.synonymsFor when the word does not exist when the inversion boolean is not given should produce the correct number of synonyms&#10;synonymsFor when the word does not exist when the inversion boolean is set to false should produce the correct number of synonyms&#10;synonymsFor when the word does not exist when the inversion boolean is set to true should produce the correct number of synonyms&#10;synonymsFor when the word exists when the inversion boolean is not given should produce the correct number of synonyms&#10;synonymsFor when the word exists when the inversion boolean is set to false should produce the correct number of synonyms&#10;synonymsFor when the word exists when the inversion boolean is set to true should produce the correct number of synonyms" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="cruzcycles" />
+      <setting name="path" value="com.test.CruzCyclesTest" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="synonymsFor when the word does not exist when the inversion boolean is not given should produce the correct number of synonyms&#10;synonymsFor when the word does not exist when the inversion boolean is set to false should produce the correct number of synonyms&#10;synonymsFor when the word does not exist when the inversion boolean is set to true should produce the correct number of synonyms&#10;synonymsFor when the word exists when the inversion boolean is not given should produce the correct number of synonyms&#10;synonymsFor when the word exists when the inversion boolean is set to false should produce the correct number of synonyms&#10;synonymsFor when the word exists when the inversion boolean is set to true should produce the correct number of synonyms" />
+      <setting name="testKind" value="Test name" />
+      <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="cruzcycles" />
+      <setting name="path" value="com.test.CruzCyclesTest" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="exploreSynonymsDepthFirst should return all stuff" />
       <setting name="testKind" value="Test name" />
       <setting name="showProgressMessages" value="true" />
       <classRegexps />
@@ -498,19 +499,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.nonSymmetricSynonymEntries should return all the non-symmetric synonym entries" />
-      <item index="1" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.nonSymmetricAntonymEntries should return all the non-symmetric antonym entries" />
-      <item index="2" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.transposedThesaurus should be the proper length" />
-      <item index="3" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.transposedThesaurus should be the proper length&#10;transposedThesaurus should return the correct edge relationships" />
-      <item index="4" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.transposedThesaurus should return the correct edge relationships" />
+      <item index="0" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.transposedThesaurus should be the proper length" />
+      <item index="1" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.transposedThesaurus should be the proper length&#10;transposedThesaurus should return the correct edge relationships" />
+      <item index="2" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.transposedThesaurus should return the correct edge relationships" />
+      <item index="3" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.synonymsFor when the word does not exist when the inversion boolean is not given should produce the correct number of synonyms&#10;synonymsFor when the word does not exist when the inversion boolean is set to false should produce the correct number of synonyms&#10;synonymsFor when the word does not exist when the inversion boolean is set to true should produce the correct number of synonyms&#10;synonymsFor when the word exists when the inversion boolean is not given should produce the correct number of synonyms&#10;synonymsFor when the word exists when the inversion boolean is set to false should produce the correct number of synonyms&#10;synonymsFor when the word exists when the inversion boolean is set to true should produce the correct number of synonyms" />
+      <item index="4" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.transposedThesaurus should return the correct edge relationships" />
-        <item index="1" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.transposedThesaurus should be the proper length&#10;transposedThesaurus should return the correct edge relationships" />
-        <item index="2" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.transposedThesaurus should be the proper length" />
-        <item index="3" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.nonSymmetricAntonymEntries should return all the non-symmetric antonym entries" />
-        <item index="4" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.nonSymmetricSynonymEntries should return all the non-symmetric synonym entries" />
+        <item index="0" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" />
+        <item index="1" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.synonymsFor when the word does not exist when the inversion boolean is not given should produce the correct number of synonyms&#10;synonymsFor when the word does not exist when the inversion boolean is set to false should produce the correct number of synonyms&#10;synonymsFor when the word does not exist when the inversion boolean is set to true should produce the correct number of synonyms&#10;synonymsFor when the word exists when the inversion boolean is not given should produce the correct number of synonyms&#10;synonymsFor when the word exists when the inversion boolean is set to false should produce the correct number of synonyms&#10;synonymsFor when the word exists when the inversion boolean is set to true should produce the correct number of synonyms" />
+        <item index="2" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.transposedThesaurus should return the correct edge relationships" />
+        <item index="3" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.transposedThesaurus should be the proper length&#10;transposedThesaurus should return the correct edge relationships" />
+        <item index="4" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.transposedThesaurus should be the proper length" />
       </list>
     </recent_temporary>
   </component>
@@ -564,39 +565,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CruzCyclesTest_transposedThesaurus_should_be_the_proper_length_transposedThesaurus_should_return_the_correct_edge_relationships - 2017.05.21 at 10h 10m 57s.xml">
-      <configuration name="CruzCyclesTest.transposedThesaurus should be the proper length&#10;transposedThesaurus should return the correct edge relationships" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_exploreSynonymsDepthFirst_should_return_all_stuff - 2017.05.21 at 15h 55m 49s.xml">
+      <configuration name="CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_transposedThesaurus_should_be_the_proper_length_transposedThesaurus_should_return_the_correct_edge_relationships - 2017.05.21 at 10h 12m 14s.xml">
-      <configuration name="CruzCyclesTest.transposedThesaurus should be the proper length&#10;transposedThesaurus should return the correct edge relationships" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_exploreSynonymsDepthFirst_should_return_all_stuff - 2017.05.21 at 15h 55m 59s.xml">
+      <configuration name="CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_transposedThesaurus_should_be_the_proper_length_transposedThesaurus_should_return_the_correct_edge_relationships - 2017.05.21 at 10h 13m 52s.xml">
-      <configuration name="CruzCyclesTest.transposedThesaurus should be the proper length&#10;transposedThesaurus should return the correct edge relationships" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_exploreSynonymsDepthFirst_should_return_all_stuff - 2017.05.21 at 15h 56m 12s.xml">
+      <configuration name="CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_transposedThesaurus_should_be_the_proper_length_transposedThesaurus_should_return_the_correct_edge_relationships - 2017.05.21 at 11h 19m 36s.xml">
-      <configuration name="CruzCyclesTest.transposedThesaurus should be the proper length&#10;transposedThesaurus should return the correct edge relationships" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_exploreSynonymsDepthFirst_should_return_all_stuff - 2017.05.21 at 15h 56m 21s.xml">
+      <configuration name="CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_transposedThesaurus_should_return_the_correct_edge_relationships - 2017.05.21 at 00h 23m 26s.xml">
-      <configuration name="CruzCyclesTest.transposedThesaurus should return the correct edge relationships" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_exploreSynonymsDepthFirst_should_return_all_stuff - 2017.05.21 at 15h 56m 32s.xml">
+      <configuration name="CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_transposedThesaurus_should_return_the_correct_edge_relationships - 2017.05.21 at 00h 24m 08s.xml">
-      <configuration name="CruzCyclesTest.transposedThesaurus should return the correct edge relationships" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_exploreSynonymsDepthFirst_should_return_all_stuff - 2017.05.21 at 17h 05m 31s.xml">
+      <configuration name="CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_transposedThesaurus_should_return_the_correct_edge_relationships - 2017.05.21 at 00h 24m 41s.xml">
-      <configuration name="CruzCyclesTest.transposedThesaurus should return the correct edge relationships" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_exploreSynonymsDepthFirst_should_return_all_stuff - 2017.05.21 at 17h 06m 49s.xml">
+      <configuration name="CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_transposedThesaurus_should_return_the_correct_edge_relationships - 2017.05.21 at 00h 25m 07s.xml">
-      <configuration name="CruzCyclesTest.transposedThesaurus should return the correct edge relationships" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_exploreSynonymsDepthFirst_should_return_all_stuff - 2017.05.21 at 17h 12m 01s.xml">
+      <configuration name="CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_transposedThesaurus_should_return_the_correct_edge_relationships - 2017.05.21 at 14h 12m 10s.xml">
-      <configuration name="CruzCyclesTest.transposedThesaurus should return the correct edge relationships" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_exploreSynonymsDepthFirst_should_return_all_stuff - 2017.05.21 at 17h 28m 16s.xml">
+      <configuration name="CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_transposedThesaurus_should_return_the_correct_edge_relationships - 2017.05.21 at 14h 12m 45s.xml">
-      <configuration name="CruzCyclesTest.transposedThesaurus should return the correct edge relationships" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_exploreSynonymsDepthFirst_should_return_all_stuff - 2017.05.21 at 17h 35m 18s.xml">
+      <configuration name="CruzCyclesTest.exploreSynonymsDepthFirst should return all stuff" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
+    <frame x="0" y="0" width="2560" height="1440" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -693,16 +694,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala-2.12/com/test/CruzCyclesTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="50" column="35" lean-forward="true" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+        <state relative-caret-position="508">
+          <caret line="107" column="63" lean-forward="true" selection-start-line="107" selection-start-column="63" selection-end-line="107" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/package.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="279">
+          <caret line="111" column="2" lean-forward="true" selection-start-line="111" selection-start-column="2" selection-end-line="111" selection-end-column="2" />
           <folding />
         </state>
       </provider>

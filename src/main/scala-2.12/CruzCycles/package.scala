@@ -30,18 +30,19 @@ package object CruzCycles {
     generateThesaurusAcc(Map(), getThesaurusLines())
   }
 
-  def synonymsFor(word: String): Set[String] = thesaurus(word)._1
+  def synonymsFor(word: String, invert: Boolean = false): Set[String] =
+    if (invert) transposedThesaurus(word)._1 else thesaurus(word)._1
 
   def antonymsFor(word: String): Set[String] = thesaurus(word)._2
 
-  def exploreSynonyms(word: String): Set[String] = {
+  def exploreSynonyms(word: String, invert: Boolean = false): Set[String] = {
     def exploreSynonymsAcc(current: Set[String], visited: Set[String]): Set[String] = {
       if (current.size < 1)
         visited
       else {
         val nextWords = for {
           word <- current
-          nextWords <- ((synonymsFor(word) -- visited) -- current)
+          nextWords <- ((synonymsFor(word, invert) -- visited) -- current)
         } yield nextWords
 
         exploreSynonymsAcc(nextWords, visited ++ nextWords)
@@ -56,7 +57,7 @@ package object CruzCycles {
       synonyms.foldLeft(acc) {
         case (acc, synonym) => acc + (synonym -> (((acc.getOrElse(synonym, (Set[String](), Set[String]()))._1 + word), Set[String]())))
       }
-    }
+    }.withDefaultValue((Set(), Set()))
   }
 
   lazy val thesaurusList = thesaurus.map { case (k, v) => (k, v) } toList
@@ -89,14 +90,22 @@ package object CruzCycles {
     nonSymmetricAntonymEntriesAcc(thesaurusList, Set())
   }
 
-//  def exploreSynonymsDepthFirst(siblings: Set[String]): List[String] = {
-//    def exploreDepthFirstAcc(siblings: Set[String], acc: Set[String]): Set[String] = {
-//
-//    }
-//
-//    exploreDepthFirstAcc(siblings, Set())
-//  }
-//
+  def exploreSynonymsDepthFirst(start: String): (List[String], Set[String]) = {
+    def childrenNotVisited(parent: String, visited: Set[String]) = synonymsFor(parent) filterNot visited.contains
+
+    def exploreSynonymsDepthFirstAcc(stack: Set[String], visited: Set[String]): Set[String] = stack.isEmpty match {
+      case true => visited
+      case false => {
+        val nextStack = childrenNotVisited(stack.head, visited) ++ stack.tail
+        exploreSynonymsDepthFirstAcc(nextStack, visited + stack.head)
+      }
+    }
+
+    val response = exploreSynonymsDepthFirstAcc(Set(start), Set())
+
+    (response.toList, response)
+  }
+
 //  def connectedComponents(): List[Set[String]] = {
 //    def firstPass(): List[String] = {
 //      def firstPassAcc(acc: List[String]) = {
@@ -113,8 +122,8 @@ package object CruzCycles {
 //          case true => secondPassAcc(xs, acc, visited)
 //          case false => {
 //
-//            val explored = exploreSynonymsDepthFirst(Set(x))
-//            secondPassAcc(xs, explored.toSet :: acc, visited ++ explored)
+//            val explored = exploreSynonymsDepthFirst(stack.head)
+//            secondPassAcc(xs, explored._2 :: acc, visited ++ explored._2)
 //          }
 //        }
 //      }

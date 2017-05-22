@@ -16,14 +16,42 @@ class CruzCyclesTest extends FunSpec {
 
   describe("synonymsFor") {
     describe("when the word does not exist") {
-      it("should produce the correct number of synonyms") {
-        assert(synonymsFor("piz").size === 0)
+      describe("when the inversion boolean is not given") {
+        it("should produce the correct number of synonyms") {
+          assert(synonymsFor("piz").size === 0)
+        }
+      }
+
+      describe("when the inversion boolean is set to false") {
+        it("should produce the correct number of synonyms") {
+          assert(synonymsFor("piz", false).size === 0)
+        }
+      }
+
+      describe("when the inversion boolean is set to true") {
+        it("should produce the correct number of synonyms") {
+          assert(synonymsFor("piz", true).size === 0)
+        }
       }
     }
 
     describe("when the word exists") {
-      it("should produce the correct number of synonyms") {
-        assert(synonymsFor("zip").size === 28)
+      describe("when the inversion boolean is not given") {
+        it("should produce the correct number of synonyms") {
+          assert(synonymsFor("zip").size === 28)
+        }
+      }
+
+      describe("when the inversion boolean is set to false") {
+        it("should produce the correct number of synonyms") {
+          assert(synonymsFor("zip", false).size === 28)
+        }
+      }
+
+      describe("when the inversion boolean is set to true") {
+        it("should produce the correct number of synonyms") {
+          assert(synonymsFor("zip", true).size === 23)
+        }
       }
     }
   }
@@ -43,8 +71,22 @@ class CruzCyclesTest extends FunSpec {
   }
 
   describe("exploreSynonyms") {
-    it("should return all the possible synonyms that can be reached") {
-      assert(exploreSynonyms("glasses").size == 4)
+    describe("when the inversion boolean is not given") {
+      it("should return all the possible synonyms that can be reached") {
+        assert(exploreSynonyms("glasses").size == 4)
+      }
+    }
+
+    describe("when the inversion boolean is set to false") {
+      it("should return all the possible synonyms that can be reached") {
+        assert(exploreSynonyms("glasses", false).size == 4)
+      }
+    }
+
+    describe("when the inversion boolean is set to true") {
+      it("should return all the possible synonyms that can be reached") {
+        assert(exploreSynonyms("glasses", true).size == 4)
+      }
     }
   }
 
@@ -66,6 +108,12 @@ class CruzCyclesTest extends FunSpec {
     it("should return all the non-symmetric antonym entries") {
       val answer = nonSymmetricAntonymEntries() forall { el => !(antonymsFor(el._2) contains el._1) }
       assert(answer)
+    }
+  }
+
+  describe("exploreSynonymsDepthFirst") {
+    it("should return all stuff") {
+      println(exploreSynonymsDepthFirst("fast")._1.size)
     }
   }
 
