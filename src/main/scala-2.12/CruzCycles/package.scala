@@ -199,9 +199,7 @@ package object CruzCycles {
     val file = new File("cruz_cycles.txt")
     val bw = new BufferedWriter(new FileWriter(file))
 
-    cycles foreach (cycle => {
-      bw.write(cycle.mkString(", ") + "\n")
-    })
+    cycles foreach (cycle => bw.write(cycle.mkString(", ") + "\n"))
     bw.close()
     cycles
   }
