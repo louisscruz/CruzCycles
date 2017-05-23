@@ -1,4 +1,5 @@
 import scala.io.Source
+import java.io._
 
 package object CruzCycles {
   type SynonymAntonymTuple = (Set[String], Set[String])
@@ -191,7 +192,19 @@ package object CruzCycles {
     findCruzCyclesAcc(synonyms, initialMap)
   }
 
-  def allCycles(): CycleList = thesaurus map { case (k, _) => findCruzCycle(k) } toList
+  def findCyclesForAll(): CycleList = thesaurus map { case (k, _) => findCruzCycle(k) } toList
+
+  def writeAllFoundCycles(): CycleList = {
+    val cycles = findCyclesForAll().sortWith(_.head < _.head)
+    val file = new File("cruz_cycles.txt")
+    val bw = new BufferedWriter(new FileWriter(file))
+
+    cycles foreach (cycle => {
+      bw.write(cycle.mkString(", ") + "\n")
+    })
+    bw.close()
+    cycles
+  }
 
   def cycleComparison(cycles: CycleList, temp: Int, cmp: (Int, Int) => Int): CycleList = {
     def cycleComparisonAcc(cycles: CycleList, i: Int, acc: CycleList): CycleList = cycles match {
