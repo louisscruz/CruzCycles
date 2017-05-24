@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2ce1ae6-8aba-4c92-8805-9da015df25c0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/package.scala" afterPath="$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/package.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -28,8 +28,8 @@
       <file leaf-file-name="package.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/package.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="204" column="14" lean-forward="true" selection-start-line="204" selection-start-column="14" selection-end-line="204" selection-end-column="14" />
+            <state relative-caret-position="960">
+              <caret line="189" column="0" lean-forward="true" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -48,8 +48,8 @@
       <file leaf-file-name="CruzCyclesTest.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/scala-2.12/com/test/CruzCyclesTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="778">
-              <caret line="223" column="3" lean-forward="false" selection-start-line="223" selection-start-column="3" selection-end-line="223" selection-end-column="3" />
+            <state relative-caret-position="403">
+              <caret line="143" column="45" lean-forward="false" selection-start-line="143" selection-start-column="45" selection-end-line="143" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -171,7 +171,7 @@
   <component name="PropertiesComponent">
     <property name="FullScreen" value="true" />
   </component>
-  <component name="RunManager" selected="ScalaTest.CruzCyclesTest.a b">
+  <component name="RunManager" selected="ScalaTest.CruzCyclesTest.maxConnectedComponent should return the largest">
     <configuration default="false" name="CruzCyclesTest.maxConnectedComponent should return the largest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="cruzcycles" />
@@ -521,11 +521,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.a b" />
-        <item index="1" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.uh oh something" />
-        <item index="2" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest" />
-        <item index="3" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.maxConnectedComponent should do something" />
-        <item index="4" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.maxConnectedComponent should return the largest" />
+        <item index="0" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.maxConnectedComponent should return the largest" />
+        <item index="1" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.a b" />
+        <item index="2" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.uh oh something" />
+        <item index="3" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest" />
+        <item index="4" class="java.lang.String" itemvalue="ScalaTest.CruzCyclesTest.maxConnectedComponent should do something" />
       </list>
     </recent_temporary>
   </component>
@@ -591,8 +591,8 @@
     <history-entry file="CruzCyclesTest_a_b - 2017.05.23 at 20h 23m 47s.xml">
       <configuration name="CruzCyclesTest.a b" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="CruzCyclesTest_maxConnectedComponent_should_do_something - 2017.05.21 at 23h 15m 22s.xml">
-      <configuration name="CruzCyclesTest.maxConnectedComponent should do something" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="CruzCyclesTest_maxConnectedComponent_should_return_the_largest - 2017.05.23 at 22h 23m 08s.xml">
+      <configuration name="CruzCyclesTest.maxConnectedComponent should return the largest" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
     <history-entry file="CruzCyclesTest_uh_oh_something - 2017.05.23 at 12h 38m 29s.xml">
       <configuration name="CruzCyclesTest.uh oh something" configurationId="ScalaTestRunConfiguration" />
@@ -764,16 +764,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala-2.12/CruzCycles/package.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="204" column="14" lean-forward="true" selection-start-line="204" selection-start-column="14" selection-end-line="204" selection-end-column="14" />
+        <state relative-caret-position="960">
+          <caret line="189" column="0" lean-forward="true" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala-2.12/com/test/CruzCyclesTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="778">
-          <caret line="223" column="3" lean-forward="false" selection-start-line="223" selection-start-column="3" selection-end-line="223" selection-end-column="3" />
+        <state relative-caret-position="403">
+          <caret line="143" column="45" lean-forward="false" selection-start-line="143" selection-start-column="45" selection-end-line="143" selection-end-column="45" />
           <folding />
         </state>
       </provider>
