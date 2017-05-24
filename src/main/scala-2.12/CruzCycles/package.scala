@@ -192,16 +192,18 @@ package object CruzCycles {
     findCruzCyclesAcc(synonyms, initialMap)
   }
 
-  def findCyclesForAll(): CycleList = thesaurus map { case (k, _) => findCruzCycle(k) } toList
+  def findCyclesForAll(): CycleList = thesaurus map { case (k, _) => findCruzCycle(k) } filterNot (el => el.isEmpty) toList
 
   def writeAllFoundCycles(): CycleList = {
-    val cycles = findCyclesForAll().sortWith(_.head < _.head)
+    val cycles = findCyclesForAll()
+    println(cycles)
+    val sortedCycles = cycles.sortWith(_.head.toLowerCase < _.head.toLowerCase)
     val file = new File("cruz_cycles.txt")
     val bw = new BufferedWriter(new FileWriter(file))
 
-    cycles foreach (cycle => bw.write(cycle.mkString(", ") + "\n"))
+    sortedCycles foreach (cycle => bw.write(cycle.mkString(", ") + "\n"))
     bw.close()
-    cycles
+    sortedCycles
   }
 
   def cycleComparison(cycles: CycleList, temp: Int, cmp: (Int, Int) => Int): CycleList = {
